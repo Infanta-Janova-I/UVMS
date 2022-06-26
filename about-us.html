@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- Mirrored from websmirno.site/childit/about-us.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Jun 2022 15:20:42 GMT -->
+<head>
+		<title>Child IT</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<!--====>> Favicon icon CSS <<====-->
+		<link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico" />
+		<link rel="stylesheet" href="../../use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	
+		<!--====>> Google fonts <<====-->
+		<link href="../../fonts.googleapis.com/css2db5.css?family=Roboto:400,400i,500,700&amp;display=swap" rel="stylesheet">
+		<link href="../../fonts.googleapis.com/css0050.css?family=Poppins:400,400i,500,600,700&amp;display=swap" rel="stylesheet">
+	
+		<!--====>> Index CSS <<====-->
+		<link href="css/index.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body class="about">
+		<div class="preloader">
+			<div class="preloader-container">
+				<div class="preloader-item"></div>
+				<div class="preloader-item"></div>
+				<div class="preloader-item"></div>
+				<div class="preloader-item"></div>
+				<div class="preloader-item"></div>
+			</div>
+		</div>
+		<!-- Begin quickLinks -->
+		<div class="quickLinks-wrap">
+			<div class="quickLinks-item" data-for-quick = '1'>
+				<div class="quickLinks-head">
+					<img src="img/map-marker-white.svg" alt="img">
+					<p>Location</p>
+				</div>
+			</div>
+			<div class="quickLinks-item" data-for-quick = '2'>
+				<div class="quickLinks-head">
+					<img src="img/calendar-white.svg" alt="img">
+					<p>Book a Tour</p>
+				</div>
+			</div>
+			<div class="quickLinks-item" data-for-quick = '3'>
+				<div class="quickLinks-head">
+					<img src="img/paper-white.svg" alt="img">
+					<p>For Parents</p>
+				</div>
+			</div>
+			<div class="quickLinks-item" data-for-quick = '4'>
+				<div class="quickLinks-head">
+					<img src="img/phone-white.svg" alt="img">
+					<p>Contacts</p>
+				</div>
+			</div>
+		
+			<div class="quickLinks-desc" data-to-quick = '1'>
+				<div class="map-block" id="quick-map" data-lng='-117.2697074' data-lat='34.0887252' data-zoom='15' data-map-icon="img/map-marker.svg"></div>
+			</div>
+			<div class="quickLinks-desc" data-to-quick = '2'>
+				<div class="quickLinks-content">
+					<h4>Book A Tour</h4>
+					<form action="#" class="book-form" id="bookingForm">
+						<div class="successform">
+							<p>Your message was sent successfully!</p>
+						</div>
+						<div class="errorform">
+							<p>Something went wrong, try refreshing and submitting the form again.</p>
+						</div>
+						<input type="text" name="name" placeholder="Your name">
+						<div class="row">
+							<div class="col-lg-6">
+								<input type="email" name="email" placeholder="Your e-mail">
+							</div>
+							<div class="col-lg-6">
+								<input type="tel" name="phone" placeholder="Your phone">
+							</div>
+						</div>
+						<div class="time-picker">
+							<img src="img/lazy.png" class="lazy" data-src="img/calendar.svg" alt="img">
+							<input type="text" name="date" class="choose-data datetimepicker" autocomplete="off" placeholder="What is your child's birth date?" readonly>
+						</div>
+						<div class="check-list-wrap">
+							<div class="check-list-header">
+								<p>Which care days do you require?</p>
+							</div>
+							<div class="check-list">
+								<label for="monday">
+									<input type="checkbox" name="monday" id="monday">
+									<span>monday</span>
+								</label>
+								<label for="thursday">
+									<input type="checkbox" name="thursday" id="thursday">
+									<span>thursday</span>
+								</label>
+								<label for="tuesday">
+									<input type="checkbox" name="tuesday" id="tuesday">
+									<span>tuesday</span>
+								</label>
+								<label for="friday">
+									<input type="checkbox" name="friday" id="friday">
+									<span>friday</span>
+								</label>
+								<label for="wednesday">
+									<input type="checkbox" name="wednesday" id="wednesday">
+									<span>wednesday</span>
+								</label>
+								<label for="saturday">
+									<input type="checkbox" name="saturday" id="saturday">
+									<span>saturday</span>
+								</label>
+							</div>
+						</div>
+						<div class="time-picker">
+							<img src="img/lazy.png" class="lazy" data-src="img/calendar.svg" alt="img">
+							<input type="text" name="time" class="choose-data datetimepicker" autocomplete="off" placeholder="Desired Start Date" readonly>
+						</div>
+						<button type="submit" class="button read-more mt-10">submit <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M0.505883 5.20577L0.491834 5.2027L6.51423 5.2027L4.62101 7.10009C4.5283 7.19272 4.47745 7.31821 4.47745 7.44992C4.47745 7.58162 4.5283 7.70623 4.62101 7.79909L4.91559 8.09382C5.00823 8.18645 5.13166 8.23767 5.2633 8.23767C5.39501 8.23767 5.51852 8.18682 5.61115 8.09418L8.85649 4.84913C8.94949 4.75613 9.00035 4.63226 8.99998 4.50048C9.00035 4.36796 8.94949 4.24401 8.85649 4.15116L5.61115 0.905818C5.51852 0.813257 5.39508 0.76233 5.2633 0.76233C5.13166 0.76233 5.00823 0.813331 4.91559 0.905818L4.62101 1.20055C4.5283 1.29304 4.47745 1.41655 4.47745 1.54826C4.47745 1.67989 4.5283 1.79689 4.62101 1.88945L6.53559 3.79745L0.499152 3.79745C0.227908 3.79745 -1.94412e-05 4.03123 -1.94175e-05 4.30233L-1.93811e-05 4.71918C-1.93574e-05 4.99028 0.23464 5.20577 0.505883 5.20577Z"/></svg></button>
+					</form>
+				</div>
+			</div>
+			<div class="quickLinks-desc" data-to-quick = '3'>
+				<div class="quickLinks-content">
+					<h4>Parent Resources</h4>
+					<div class="download-list">
+						<p>
+							<span>
+								<img src="img/lazy.png" class="lazy" data-src="img/handbook.svg" alt="img">
+								Parent Handbook (246 Kb)
+							</span>
+							<a href="#"><img src="img/lazy.png" class="lazy" data-src="img/pdf-ico.svg" alt="img">download</a>
+						</p>
+						<p>
+							<span>
+								<img src="img/lazy.png" class="lazy" data-src="img/checklist.svg" alt="img">
+								Child Care Checklist (95 KB)
+							</span>
+							<a href="#"><img src="img/lazy.png" class="lazy" data-src="img/pdf-ico.svg" alt="img">download</a>
+						</p>
+						<p>
+							<span>
+								<img src="img/lazy.png" class="lazy" data-src="img/paper-form.svg" alt="img">
+								Agreement Form (94 KB)
+							</span>
+							<a href="#"><img src="img/lazy.png" class="lazy" data-src="img/pdf-ico.svg" alt="img">download</a>
+						</p>
+						<p>
+							<span>
+								<img src="img/lazy.png" class="lazy" data-src="img/billing.svg" alt="img">
+								Monthly Billing Chart (95 KB)
+							</span>
+							<a href="#"><img src="img/lazy.png" class="lazy" data-src="img/pdf-ico.svg" alt="img">download</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="quickLinks-desc" data-to-quick = '4'>
+				<div class="quickLinks-content">
+					<h4>Our Contacts</h4>
+					<div class="contact-list">
+						<a href="#" target="_blank"><img src="img/lazy.png" class="lazy" data-src='img/map-marker-small.svg' alt="marker"> 3261 Anmoore Road Brooklyn, NY 11230</a>
+						<a href="tel:8001234567"><img src="img/lazy.png" class="lazy" data-src='img/call.svg' alt="call"> 800-123-4567, Fax: 718-724-3312</a>
+						<a href="mailto:officeone@youremail.com"><img src="img/lazy.png" class="lazy" data-src='img/envelope.svg' alt="img">officeone@youremail.com</a>
+						<p><img src="img/lazy.png" class="lazy" data-src='img/clock.svg' alt="img">Mon-Fri: 9:00 am – 5:00 pm<br>Sat: 11:00 am – 16:00 pm</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End quickLinks -->
+		<!-- Begin header -->
+		<header class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="top-line">
+							<a href="index.html" class="logo"><img src="img/logo.svg" alt="logo"></a>
+							<nav class="main-nav">
+								<ul class="main-nav-list">
+									<li>
+										<a href="index.html">Home</a>
+									</li>
+									<li>
+										<a href="about-us.html" class="active-link">About Us</a>
+									</li>
+									<li>
+										<a href="programs.html">Programs</a>
+									</li>
+									<li>
+										<a href="parent-info.html">Parent Info</a>
+									</li>
+									<li>
+										<a href="events.html">Events <i class="fas fa-angle-down"></i></a>
+										<ul class="tt-dropdown-menu">
+											<li>
+												<a href="events.html">Events </a>
+											</li>
+											<li><a href="single-event.html">Event post</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="gallery-boxed.html">Gallery <i class="fas fa-angle-down"></i></a>
+										<ul class="tt-dropdown-menu">
+											<li>
+												<a href="gallery-boxed.html">Gallery boxed</a>
+											</li>
+											<li><a href="gallery-full-width.html">Gallery full width</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Pages <i class="fas fa-angle-down"></i></a>
+										<ul class="tt-dropdown-menu">
+											<li>
+												<a href="faq.html">FAQs</a>
+											</li>
+											<li>
+												<a href="testimonials.html">Testimonials</a>
+											</li>
+											<li>
+												<a href="prices.html">Prices</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="blog-posts.html">Blog <i class="fas fa-angle-down"></i></a>
+										<ul class="tt-dropdown-menu">
+											<li>
+												<a href="blog-posts.html">Blog posts</a>
+											</li>
+											<li>
+												<a href="single-post.html">Single post</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="contacts.html">Contacts</a>
+									</li>
+								</ul>
+								<div class="close-nav">
+									<svg viewBox="0 0 40 40" fill="none" xmlns="../../www.w3.org/2000/svg.html">
+										<path d="M 10,10 L 30,30 M 30,10 L 10,30" fill="#3B4757"/>
+									</svg>
+								</div>
+							</nav>
+							<div class="header-controls">
+								<div class="header-search">
+									<i class="fas fa-search"></i>
+									<form action="#" class="search-form">
+										<input type="search" class="search" name="search" placeholder="Search...">
+										<button type="submit"><i class="fas fa-search"></i></button>
+									</form>
+								</div>
+								<div class="hamburger">
+									<svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="../../www.w3.org/2000/svg.html">
+										<path d="M1.02857 2.31427H22.9714C23.5371 2.31427 24 1.85141 24 1.2857C24 0.719983 23.5371 0.257126 22.9714 0.257126H1.02857C0.462857 0.257126 0 0.719983 0 1.2857C0 1.85141 0.462857 2.31427 1.02857 2.31427Z" fill="#3B4757"/>
+										<path d="M1.02857 10.0285H22.9714C23.5371 10.0285 24 9.56567 24 8.99996C24 8.43425 23.5371 7.97139 22.9714 7.97139H1.02857C0.462857 7.97139 0 8.43425 0 8.99996C0 9.56567 0.462857 10.0285 1.02857 10.0285Z" fill="#3B4757"/>
+										<path d="M1.02857 17.7428H22.9714C23.5371 17.7428 24 17.28 24 16.7143C24 16.1485 23.5371 15.6857 22.9714 15.6857H1.02857C0.462857 15.6857 0 16.1485 0 16.7143C0 17.28 0.462857 17.7428 1.02857 17.7428Z" fill="#3B4757"/>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="top-img">
+				<img src="img/lazy.png" class="lazy" data-src="img/cloud.png" alt="cloud">
+			</div>
+			<!-- <div class="bottom-img">
+				<img src="img/lazy.png" class="lazy" data-src="img/cloud.png" alt="cloud">
+			</div> -->
+		</header>
+		<!-- End header -->
+
+		<!-- Begin page name -->
+		<section class="page-name mb-xs-30 mb-md-30 mb-lg-60">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h1 class="text-center">About Us</h1>
+					</div>
+				</div>
+			</div>
+			<div class="layer-background lazy" data-src="img/slider.png"></div>
+			<img src="img/lazy.png" class="page-name-img lazy" data-src="img/cloud.png" alt="Img">
+		</section>
+		<!-- End page name -->
+
+		<main class="main-container">
+			<!-- Begin text-block -->
+			<section class="text-block pb-xs-50 pb-sm-65 pb-md-90 pb-lg-120 pt-xs-30 pt-md-60">
+				<div class="container">
+					<div class="row align-items-sm-center align-items-lg-start">
+						<div class="col-lg-12 col-xl-6">
+							<div class="block-header pt-0">
+								<p class="mb-xs-15 mb-lg-8">Igniting the spark of genius in every child</p>
+								<h2 class="mb-xs-25 mb-md-25">We Work to Understand Your <span>Kids Needs</span></h2>
+							</div>
+							<p class="mb-xs-15 mb-lg-8">We provide a warm and encouraging atmosphere that enhances self-concept, instills basic moral values, encourages social interaction, and enriches awareness of the natural and cultural world. We’re a warm and loving community of preschoolers, teachers, and parents who inspire imagination, creativity, and play for every learner.</p>
+							<p class="mb-xs-20 mb-md-37">In an environment rooted in respect and compassion, we strive to nourish each child's spirit and provide a protective space for him or her to grow.</p>
+						</div>
+						<div class="col-lg-12 col-xl-6">
+							<div class="svg-block video-block">
+								<a href="../../www.youtube.com/watch6a31.html?v=NkfKechADow" data-toggle="lightbox">
+									<img src="img/lazy.png" class="video-prev lazy" data-src="img/video-prev.jpg" alt="img">
+									<p class="video-btn"><span class="play-ico animate x2"><span><img src="img/lazy.png" class="lazy" data-src='img/play.svg' alt="img"></span></span></p>
+								</a>
+
+								<!-- <a href="https://www.youtube.com/watch?v=NkfKechADow" class="video-btn"><span class="play-ico"><img src="img/lazy.png" class="lazy" data-src='img/play.svg' alt="img"></span></a> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Begin text-block -->
+			<!-- Begin statements -->
+			<section class="wave-block pt-xs-110 pt-md-120 pt-lg-150 mb-xs-50 mb-sm-50 mb-md-70 mb-lg-120 lazy" data-src="img/blue-wave.png">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="section-header">
+								<p class="h-sub">What is special about centre</p>
+								<h2>Vision & Mission Statements</h2>
+							</div>
+							<ul class="statement-list statement-slider" data-show-count='3' data-show-count-md='2' data-show-count-mob='1' data-slick-speed="5000" data-slick-autoplay="true">
+								<li>
+									<div class="statement-card">
+										<div class="statement-ico">
+											<img src="img/lazy.png" class="lazy" data-src="img/paper.svg" alt="img">
+										</div>
+										<h4>Our Mission</h4>
+										<p>We believe in the ability to improve the quality of life of the individuals and families across the city.</p>
+									</div>
+								</li>
+								<li>
+									<div class="statement-card">
+										<div class="statement-ico">
+											<img src="img/lazy.png" class="lazy" data-src="img/vision.svg" alt="img">
+										</div>
+										<h4>Our Vision</h4>
+										<p>Our vision for Early Years is based upon the premise that every child receives the very best education.</p>
+									</div>
+								</li>
+								<li>
+									<div class="statement-card">
+										<div class="statement-ico">
+											<img src="img/lazy.png" class="lazy" data-src="img/philosophy.svg" alt="img">
+										</div>
+										<h4>Philosophy</h4>
+										<p>We believe that a teacher-guided, balanced approach establishes an excellent educational foundation.</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End statements -->
+			<!-- Begin advantage-list second -->
+			<section class="mb-xs-60 mb-sm-70 mb-md-90 mb-lg-120">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="section-header">
+								<p class="h-sub">Prepare your child for school readiness</p>
+								<h2>Feel The Difference</h2>
+								<p>What gives our schools the quality you feel the moment you enter are the “pillars” of belief that support them. There are six core beliefs on which everything centers at our schools.</p>
+							</div>
+							<ol class="advantage-list advantage-second">
+								<li>
+									<div class="advantage-block">
+										<h5>Experiential Learning</h5>
+										<p>We help children connect with their surroundings in new ways, so they discover what is meaningful to them in the moment and in the future.</p>
+									</div>
+								</li>
+								<li>
+									<div class="advantage-block">
+										<h5>Community</h5>
+										<p>A child’s educational success in large part depends on families, educators, peers and relevant members of the community.</p>
+									</div>
+								</li>
+								<li>
+									<div class="advantage-block">
+										<h5>Collaboration</h5>
+										<p>Sharing new experiences and solving problems with others leads to a greater sense of connectedness – as well as meaningful learning experiences.</p>
+									</div>
+								</li>
+								<li>
+									<div class="advantage-block">
+										<h5>Proven Models</h5>
+										<p>Several important learning models have been developed by educators around the world. The human connection must be a key component of learning.</p>
+									</div>
+								</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End advantage-list second -->
+			<!-- Begin count section -->
+			<div class="count-section wave-block bg-cover mb-xs-50 mb-sm-55 mb-md-70 mb-lg-120 lazy" data-src="img/count-bg.jpg">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="count-list">
+								<div class="count-block-wrap">
+									<div class="count-block">
+										<div class="count-numb">
+											<p class="numb" data-number="15">15</p>
+											<img src="img/lazy.png" class="lazy" data-src="img/cloud-small.svg" alt="img">
+										</div>
+										<div class="count-text">
+											<p>Years of experience</p>
+										</div>
+									</div>
+								</div>
+								<div class="count-block-wrap">
+									<div class="count-block">
+										<div class="count-numb">
+											<p class="numb" data-number="142">142</p>
+											<img src="img/lazy.png" class="lazy" data-src="img/cloud-small.svg" alt="img">
+										</div>
+										<div class="count-text">
+											<p>Students Enrolled</p>
+										</div>
+									</div>
+								</div>
+								<div class="count-block-wrap">
+									<div class="count-block">
+										<div class="count-numb">
+											<p class="numb" data-number="24">24</p>
+											<img src="img/lazy.png" class="lazy" data-src="img/cloud-small.svg" alt="img">
+										</div>
+										<div class="count-text">
+											<p>Qualified Teachers</p>
+										</div>
+									</div>
+								</div>
+								<div class="count-block-wrap">
+									<div class="count-block">
+										<div class="count-numb">
+											<p class="numb" data-number="12">12</p>
+											<img src="img/lazy.png" class="lazy" data-src="img/cloud-small.svg" alt="img">
+										</div>
+										<div class="count-text">
+											<p>Total Groups</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End count section -->
+			<!-- Begin centre-information -->
+			<section class="centre-information-section mb-xs-50 mb-sm-60 mb-md-70 mb-lg-120">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="section-header mb-xs-30 mb-md-31">
+								<p class="h-sub">Get to know our staff</p>
+								<h2>Dedicated Teachers & Staff</h2>
+								<p>Our staff are dedicated to enhancing the lives of children with diverse special needs by providing evaluations and other services for children to achieve full and independent lives.</p>
+							</div>
+							<div class="centre-tabs" data-tab-group>
+								<div class="centre-tabs-controls">
+									<ul class="centre-tab-list" data-tab-head>
+										<li><a href="#" class="active">Administration</a></li>
+										<li><a href="#">Operations</a></li>
+										<li><a href="#">Educators</a></li>
+									</ul>
+								</div>
+								<div class="centre-tabs-wrap" data-tab-content>
+									<div class="centre-tab-content tab-content">
+										<div class="teacher-slider" data-show-count='3' data-show-count-md='2' data-show-count-mob='1' data-slick-speed="5000" data-slick-autoplay="true">
+											<div class="teacher-slide">
+												<div class="teacher-card second-style">
+													<div class="teacher-card-top">
+														<div class="avatar-circle">
+															<img src="img/lazy.png" class="teacher-card__avatar lazy" data-src='img/teacher2.jpg' alt="avatar">
+														</div>
+														<img src="img/lazy.png" class="cloud lazy" data-src='img/cloud.svg' alt="cloud">
+													</div>
+													<div class="teacher-card__info">
+														<h5>Jamey</h5>
+														<p class="main-color-font">Toddler Classroom</p>
+														<p>Born seventh in a family of ten children, Jamey has been surrounded by young children all of her life. Combined with her extraordinary teaching skills and warm, nurturing personality, she has created truly excellent and welcoming our ChildIt centre.</p>
+														<ul class="soc-link soc-link__bg">
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/facebook.svg' title='Facebook' alt="facebook">
+															</a></li>
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/twitter.svg' title='Twitter' alt="twitter">
+															</a></li>
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/instagram.svg' title='Instagram' alt="nstagram">
+															</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="teacher-slide">
+												<div class="teacher-card second-style">
+													<div class="teacher-card-top">
+														<div class="avatar-circle">
+															<img src="img/lazy.png" class="teacher-card__avatar lazy" data-src='img/teacher1.jpg' alt="avatar">
+														</div>
+														<img src="img/lazy.png" class="cloud lazy" data-src='img/cloud.svg' alt="cloud">
+													</div>
+													<div class="teacher-card__info">
+														<h5>Lindsay</h5>
+														<p class="main-color-font">Infant Classroom</p>
+														<p>She has never tired of the “ah-ha” moments and the pride that swells in a little one who is learning to do something for the first time. A great teacher is someone who is thoughtful, creative and dedicated to learning what makes each one of their students special!</p>
+														<ul class="soc-link soc-link__bg">
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/facebook.svg' title='Facebook' alt="facebook">
+															</a></li>
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/twitter.svg' title='Twitter' alt="twitter">
+															</a></li>
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/instagram.svg' title='Instagram' alt="nstagram">
+															</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="teacher-slide">
+												<div class="teacher-card second-style">
+													<div class="teacher-card-top">
+														<div class="avatar-circle">
+															<img src="img/lazy.png" class="teacher-card__avatar lazy" data-src='img/teacher3.jpg' alt="avatar">
+														</div>
+														<img src="img/lazy.png" class="cloud lazy" data-src='img/cloud.svg' alt="cloud">
+													</div>
+													<div class="teacher-card__info">
+														<h5>Ashley</h5>
+														<p class="main-color-font">Preschool Classroom</p>
+														<p>She approaches teaching as a partnership with parents, each party child advocating from a different angle. By talking through issues as well as what is going right, together parents and teachers can help a child reach his full potential.</p>
+														<ul class="soc-link soc-link__bg">
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/facebook.svg' title='Facebook' alt="facebook">
+															</a></li>
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/twitter.svg' title='Twitter' alt="twitter">
+															</a></li>
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/instagram.svg' title='Instagram' alt="nstagram">
+															</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="teacher-slide">
+												<div class="teacher-card second-style">
+													<div class="teacher-card-top">
+														<div class="avatar-circle">
+															<img src="img/lazy.png" class="teacher-card__avatar lazy" data-src='img/teacher4.jpg' alt="avatar">
+														</div>
+														<img src="img/lazy.png" class="cloud lazy" data-src='img/cloud.svg' alt="cloud">
+													</div>
+													<div class="teacher-card__info">
+														<h5>Ashley</h5>
+														<p class="main-color-font">Preschool Classroom</p>
+														<p>She approaches teaching as a partnership with parents, each party child advocating from a different angle. By talking through issues as well as what is going right, together parents and teachers can help a child reach his full potential.</p>
+														<ul class="soc-link soc-link__bg">
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/facebook.svg' title='Facebook' alt="facebook">
+															</a></li>
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/twitter.svg' title='Twitter' alt="twitter">
+															</a></li>
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/instagram.svg' title='Instagram' alt="nstagram">
+															</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="centre-tab-content tab-content">
+										<div class="teacher-slider" data-show-count='3' data-show-count-md='2' data-show-count-mob='1' data-slick-speed="5000" data-slick-autoplay="true">
+											<div class="teacher-slide">
+												<div class="teacher-card second-style">
+													<div class="teacher-card-top">
+														<div class="avatar-circle">
+															<img src="img/lazy.png" class="teacher-card__avatar lazy" data-src='img/teacher1.jpg' alt="avatar">
+														</div>
+														<img src="img/lazy.png" class="cloud lazy" data-src='img/cloud.svg' alt="cloud">
+													</div>
+													<div class="teacher-card__info">
+														<h5>Lindsay</h5>
+														<p class="main-color-font">Infant Classroom</p>
+														<p>She has never tired of the “ah-ha” moments and the pride that swells in a little one who is learning to do something for the first time. A great teacher is someone who is thoughtful, creative and dedicated to learning what makes each one of their students special!</p>
+														<ul class="soc-link soc-link__bg">
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/facebook.svg' title='Facebook' alt="facebook">
+															</a></li>
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/twitter.svg' title='Twitter' alt="twitter">
+															</a></li>
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/instagram.svg' title='Instagram' alt="nstagram">
+															</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="teacher-slide">
+												<div class="teacher-card second-style">
+													<div class="teacher-card-top">
+														<div class="avatar-circle">
+															<img src="img/lazy.png" class="teacher-card__avatar lazy" data-src='img/teacher2.jpg' alt="avatar">
+														</div>
+														<img src="img/lazy.png" class="cloud lazy" data-src='img/cloud.svg' alt="cloud">
+													</div>
+													<div class="teacher-card__info">
+														<h5>Jamey</h5>
+														<p class="main-color-font">Toddler Classroom</p>
+														<p>Born seventh in a family of ten children, Jamey has been surrounded by young children all of her life. Combined with her extraordinary teaching skills and warm, nurturing personality, she has created truly excellent and welcoming our ChildIt centre.</p>
+														<ul class="soc-link soc-link__bg">
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/facebook.svg' title='Facebook' alt="facebook">
+															</a></li>
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/twitter.svg' title='Twitter' alt="twitter">
+															</a></li>
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/instagram.svg' title='Instagram' alt="nstagram">
+															</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="teacher-slide">
+												<div class="teacher-card second-style">
+													<div class="teacher-card-top">
+														<div class="avatar-circle">
+															<img src="img/lazy.png" class="teacher-card__avatar lazy" data-src='img/teacher3.jpg' alt="avatar">
+														</div>
+														<img src="img/lazy.png" class="cloud lazy" data-src='img/cloud.svg' alt="cloud">
+													</div>
+													<div class="teacher-card__info">
+														<h5>Ashley</h5>
+														<p class="main-color-font">Preschool Classroom</p>
+														<p>She approaches teaching as a partnership with parents, each party child advocating from a different angle. By talking through issues as well as what is going right, together parents and teachers can help a child reach his full potential.</p>
+														<ul class="soc-link soc-link__bg">
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/facebook.svg' title='Facebook' alt="facebook">
+															</a></li>
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/twitter.svg' title='Twitter' alt="twitter">
+															</a></li>
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/instagram.svg' title='Instagram' alt="nstagram">
+															</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="teacher-slide">
+												<div class="teacher-card second-style">
+													<div class="teacher-card-top">
+														<div class="avatar-circle">
+															<img src="img/lazy.png" class="teacher-card__avatar lazy" data-src='img/teacher4.jpg' alt="avatar">
+														</div>
+														<img src="img/lazy.png" class="cloud lazy" data-src='img/cloud.svg' alt="cloud">
+													</div>
+													<div class="teacher-card__info">
+														<h5>Ashley</h5>
+														<p class="main-color-font">Preschool Classroom</p>
+														<p>She approaches teaching as a partnership with parents, each party child advocating from a different angle. By talking through issues as well as what is going right, together parents and teachers can help a child reach his full potential.</p>
+														<ul class="soc-link soc-link__bg">
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/facebook.svg' title='Facebook' alt="facebook">
+															</a></li>
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/twitter.svg' title='Twitter' alt="twitter">
+															</a></li>
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/instagram.svg' title='Instagram' alt="nstagram">
+															</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="centre-tab-content tab-content">
+										<div class="teacher-slider" data-show-count='3' data-show-count-md='2' data-show-count-mob='1' data-slick-speed="5000" data-slick-autoplay="true">
+											<div class="teacher-slide">
+												<div class="teacher-card second-style">
+													<div class="teacher-card-top">
+														<div class="avatar-circle">
+															<img src="img/lazy.png" class="teacher-card__avatar lazy" data-src='img/teacher3.jpg' alt="avatar">
+														</div>
+														<img src="img/lazy.png" class="cloud lazy" data-src='img/cloud.svg' alt="cloud">
+													</div>
+													<div class="teacher-card__info">
+														<h5>Ashley</h5>
+														<p class="main-color-font">Preschool Classroom</p>
+														<p>She approaches teaching as a partnership with parents, each party child advocating from a different angle. By talking through issues as well as what is going right, together parents and teachers can help a child reach his full potential.</p>
+														<ul class="soc-link soc-link__bg">
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/facebook.svg' title='Facebook' alt="facebook">
+															</a></li>
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/twitter.svg' title='Twitter' alt="twitter">
+															</a></li>
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/instagram.svg' title='Instagram' alt="nstagram">
+															</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="teacher-slide">
+												<div class="teacher-card second-style">
+													<div class="teacher-card-top">
+														<div class="avatar-circle">
+															<img src="img/lazy.png" class="teacher-card__avatar lazy" data-src='img/teacher1.jpg' alt="avatar">
+														</div>
+														<img src="img/lazy.png" class="cloud lazy" data-src='img/cloud.svg' alt="cloud">
+													</div>
+													<div class="teacher-card__info">
+														<h5>Lindsay</h5>
+														<p class="main-color-font">Infant Classroom</p>
+														<p>She has never tired of the “ah-ha” moments and the pride that swells in a little one who is learning to do something for the first time. A great teacher is someone who is thoughtful, creative and dedicated to learning what makes each one of their students special!</p>
+														<ul class="soc-link soc-link__bg">
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/facebook.svg' title='Facebook' alt="facebook">
+															</a></li>
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/twitter.svg' title='Twitter' alt="twitter">
+															</a></li>
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/instagram.svg' title='Instagram' alt="nstagram">
+															</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="teacher-slide">
+												<div class="teacher-card second-style">
+													<div class="teacher-card-top">
+														<div class="avatar-circle">
+															<img src="img/lazy.png" class="teacher-card__avatar lazy" data-src='img/teacher2.jpg' alt="avatar">
+														</div>
+														<img src="img/lazy.png" class="cloud lazy" data-src='img/cloud.svg' alt="cloud">
+													</div>
+													<div class="teacher-card__info">
+														<h5>Jamey</h5>
+														<p class="main-color-font">Toddler Classroom</p>
+														<p>Born seventh in a family of ten children, Jamey has been surrounded by young children all of her life. Combined with her extraordinary teaching skills and warm, nurturing personality, she has created truly excellent and welcoming our ChildIt centre.</p>
+														<ul class="soc-link soc-link__bg">
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/facebook.svg' title='Facebook' alt="facebook">
+															</a></li>
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/twitter.svg' title='Twitter' alt="twitter">
+															</a></li>
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/instagram.svg' title='Instagram' alt="nstagram">
+															</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="teacher-slide">
+												<div class="teacher-card second-style">
+													<div class="teacher-card-top">
+														<div class="avatar-circle">
+															<img src="img/lazy.png" class="teacher-card__avatar lazy" data-src='img/teacher3.jpg' alt="avatar">
+														</div>
+														<img src="img/lazy.png" class="cloud lazy" data-src='img/cloud.svg' alt="cloud">
+													</div>
+													<div class="teacher-card__info">
+														<h5>Ashley</h5>
+														<p class="main-color-font">Preschool Classroom</p>
+														<p>She approaches teaching as a partnership with parents, each party child advocating from a different angle. By talking through issues as well as what is going right, together parents and teachers can help a child reach his full potential.</p>
+														<ul class="soc-link soc-link__bg">
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/facebook.svg' title='Facebook' alt="facebook">
+															</a></li>
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/twitter.svg' title='Twitter' alt="twitter">
+															</a></li>
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/instagram.svg' title='Instagram' alt="nstagram">
+															</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End centre-information -->
+			<!-- Begin text-block -->
+			<section class="text-block text-block-reverce pb-xs-50 pb-sm-60 pb-md-60 pb-lg-120 pt-0">
+				<div class="container">
+					<div class="row align-items-sm-center align-items-lg-start">
+						<div class="col-md-6">
+							<div class="block-header pt-0">
+								<p class="mb-xs-15 mb-lg-8">Professional and graduated</p>
+								<h2 class="mb-xs-25 mb-md-25">Our Staff are Guided by the <span>Principles of</span></h2>
+							</div>
+							<p class="mb-xs-15 mb-lg-8">Above and beyond our already stringent code of ethics and guidelines for continuing education, our professional staff are guided by the principles and ethical codes of the following clinical and educational organizations:</p>
+							<ul>
+								<li>
+									<p>American Speech & Hearing Association (ASHA)</p>
+								</li>
+								<li>
+									<p>Bell Academy for Listening and Spoken Language</p>
+								</li>
+								<li>
+									<p>American Physical Therapy Association (APTA)</p>
+								</li>
+								<li>
+									<p>Audiology Foundation of America</p>
+								</li>
+								<li>
+									<p>American Board of Audiology</p>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<div class="svg-block video-block">
+								<img src="img/lazy.png" class="lazy" data-src="img/education-big.png" alt="img">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Begin text-block -->
+		</main>
+
+		<footer>
+			<div class="footer-top lazy" data-src="img/footer-bg.svg">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 col-lg-4">
+							<div class="f-subscribe">
+								<a href="index.html" class="logo"><img src="img/logo.svg" alt="logo"></a>
+								<p>Our experienced team strives to offer a creative and engaging environment and the opportunity for children to learn, grow, and thrive.</p>
+								<form action="#" class="signup-form">
+									<input type="text" name="signup" class="signup" placeholder="Newsletter signup">
+									<button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M0.505883 5.20577L0.491834 5.2027L6.51423 5.2027L4.62101 7.10009C4.5283 7.19272 4.47745 7.31821 4.47745 7.44992C4.47745 7.58162 4.5283 7.70623 4.62101 7.79909L4.91559 8.09382C5.00823 8.18645 5.13166 8.23767 5.2633 8.23767C5.39501 8.23767 5.51852 8.18682 5.61115 8.09418L8.85649 4.84913C8.94949 4.75613 9.00035 4.63226 8.99998 4.50048C9.00035 4.36796 8.94949 4.24401 8.85649 4.15116L5.61115 0.905818C5.51852 0.813257 5.39508 0.76233 5.2633 0.76233C5.13166 0.76233 5.00823 0.813331 4.91559 0.905818L4.62101 1.20055C4.5283 1.29304 4.47745 1.41655 4.47745 1.54826C4.47745 1.67989 4.5283 1.79689 4.62101 1.88945L6.53559 3.79745L0.499152 3.79745C0.227908 3.79745 -1.94412e-05 4.03123 -1.94175e-05 4.30233L-1.93811e-05 4.71918C-1.93574e-05 4.99028 0.23464 5.20577 0.505883 5.20577Z"/></svg></button>
+								</form>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4">
+							<div class="f-nav">
+								<h4>Quick Links</h4>
+								<nav>
+									<ul class="flex-style">
+										<li><a href="about-us.html">About us</a></li>
+										<li><a href="prices.html">Prices</a></li>
+										<li><a href="programs.html">Programs</a></li>
+										<li><a href="faq.html">FAQs</a></li>
+										<li><a href="parent-info.html">Parent Info</a></li>
+										<li><a href="blog-posts.html">Blog</a></li>
+										<li><a href="events.html">Events</a></li>
+										<li><a href="testimonials.html">Testimonials</a></li>
+										<li><a href="gallery-boxed.html">Gallery</a></li>
+										<li><a href="contacts.html">Contacts</a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4">
+							<div class="f-contact">
+								<h4>Our Contacts</h4>
+								<div class="contact-list">
+									<a href="#" target="_blank"><img src="img/lazy.png" class="lazy" data-src='img/map-marker-small.svg' alt="marker"> 3261 Anmoore Road Brooklyn, NY 11230</a>
+									<a href="tel:8001234567"><img src="img/lazy.png" class="lazy" data-src='img/call.svg' alt="call"> 800-123-4567, Fax: 718-724-3312</a>
+									<a href="mailto:officeone@youremail.com"><img src="img/lazy.png" class="lazy" data-src='img/envelope.svg' alt="img">officeone@youremail.com</a>
+									<p><img src="img/lazy.png" class="lazy" data-src='img/clock.svg' alt="img">Mon-Fri: 9:00 am – 5:00 pm<br>Sat: 11:00 am – 16:00 pm</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom-wrap">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="footer-bottom">
+								<p>&copy; 2019 <a href="#">ChildiT.</a> All Rights Reserved. <a href="#">Privacy Policy</a></p>
+								<div class="soc-link-wrap">
+									<p>Follow us:</p>
+									<ul class="soc-link">
+										<li><a href="#">
+											<img src="img/lazy.png" class="lazy" data-src='img/facebook.svg' title='Facebook' alt="facebook">
+										</a></li>
+										<li><a href="#">
+											<img src="img/lazy.png" class="lazy" data-src='img/twitter.svg' title='Twitter' alt="twitter">
+										</a></li>
+										<li><a href="#">
+											<img src="img/lazy.png" class="lazy" data-src='img/instagram.svg' title='Instagram' alt="nstagram">
+										</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="up-btn">
+			<svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="../../www.w3.org/2000/svg.html">
+			<path d="M13 6.36563C13 6.77035 12.8528 7.17536 12.5568 7.4918C11.9438 8.1459 10.924 8.172 10.2791 7.55029L6.48873 3.89339L2.72462 7.54655C2.08197 8.17055 1.06219 8.14763 0.446938 7.49525C-0.168314 6.84259 -0.145429 5.80813 0.497507 5.18413L5.37122 0.453213C5.99268 -0.149866 6.9715 -0.151024 7.59494 0.449475L12.4992 5.1801C12.8316 5.50199 13 5.93281 13 6.36563Z"/>
+			</svg>
+		</div>
+		<!-- ===> Juery 3.2.1 JS <==== -->
+		<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="vendor/vendor-bundle.js"></script>
+		<script src="js/common.js"></script>
+		<script src="../../maps.googleapis.com/maps/api/jsb2ae?key=AIzaSyDuHS2And3EtzpWBoMSqCIIiJzAEynp5ms&amp;callback=initMap" async defer></script>
+	</body>
+
+<!-- Mirrored from websmirno.site/childit/about-us.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Jun 2022 15:20:53 GMT -->
+</html>

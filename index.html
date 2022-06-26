@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- Mirrored from websmirno.site/childit/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Jun 2022 15:17:54 GMT -->
+<head>
+	<title style="font-family: Georgia;">UVMS-Home</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<!--====>> Favicon icon CSS <<====-->
+		<link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico" />
+		<link rel="stylesheet" href="../../use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	
+		<!--====>> Google fonts <<====-->
+		<link href="../../fonts.googleapis.com/css2db5.css?family=Roboto:400,400i,500,700&amp;display=swap" rel="stylesheet">
+		<link href="../../fonts.googleapis.com/css0050.css?family=Poppins:400,400i,500,600,700&amp;display=swap" rel="stylesheet">
+	
+		<!--====>> Index CSS <<====-->
+		<link href="css/index.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="preloader">
+			<div class="preloader-container">
+				<div class="preloader-item"></div>
+				<div class="preloader-item"></div>
+				<div class="preloader-item"></div>
+				<div class="preloader-item"></div>
+				<div class="preloader-item"></div>
+			</div>
+		</div>
+		<!-- Begin quickLinks -->
+		<div class="quickLinks-wrap">
+			<div class="quickLinks-item" data-for-quick = '1'>
+				<div class="quickLinks-head">
+					<img src="img/map-marker-white.svg" alt="img">
+					<p>Location</p>
+				</div>
+			</div>
+			<div class="quickLinks-item" data-for-quick = '2'>
+				<div class="quickLinks-head">
+					<img src="img/calendar-white.svg" alt="img">
+					<p>Book a Tour</p>
+				</div>
+			</div>
+			<div class="quickLinks-item" data-for-quick = '3'>
+				<div class="quickLinks-head">
+					<img src="img/paper-white.svg" alt="img">
+					<p>For Parents</p>
+				</div>
+			</div>
+			<div class="quickLinks-item" data-for-quick = '4'>
+				<div class="quickLinks-head">
+					<img src="img/phone-white.svg" alt="img">
+					<p>Contacts</p>
+				</div>
+			</div>
+		
+			<div class="quickLinks-desc" data-to-quick = '1'>
+				<div class="map-block" id="quick-map" data-lng='-117.2697074' data-lat='34.0887252' data-zoom='15' data-map-icon="img/map-marker.svg"></div>
+			</div>
+			<div class="quickLinks-desc" data-to-quick = '2'>
+				<div class="quickLinks-content">
+					<h4>Book A Tour</h4>
+					<form action="#" class="book-form" id="bookingForm">
+						<div class="successform">
+							<p>Your message was sent successfully!</p>
+						</div>
+						<div class="errorform">
+							<p>Something went wrong, try refreshing and submitting the form again.</p>
+						</div>
+						<input type="text" name="name" placeholder="Your name">
+						<div class="row">
+							<div class="col-lg-6">
+								<input type="email" name="email" placeholder="Your e-mail">
+							</div>
+							<div class="col-lg-6">
+								<input type="tel" name="phone" placeholder="Your phone">
+							</div>
+						</div>
+						<div class="time-picker">
+							<img src="img/lazy.png" class="lazy" data-src="img/calendar.svg" alt="img">
+							<input type="text" name="date" class="choose-data datetimepicker" autocomplete="off" placeholder="What is your child's birth date?" readonly>
+						</div>
+						<div class="check-list-wrap">
+							<div class="check-list-header">
+								<p>Which care days do you require?</p>
+							</div>
+							<div class="check-list">
+								<label for="monday">
+									<input type="checkbox" name="monday" id="monday">
+									<span>monday</span>
+								</label>
+								<label for="thursday">
+									<input type="checkbox" name="thursday" id="thursday">
+									<span>thursday</span>
+								</label>
+								<label for="tuesday">
+									<input type="checkbox" name="tuesday" id="tuesday">
+									<span>tuesday</span>
+								</label>
+								<label for="friday">
+									<input type="checkbox" name="friday" id="friday">
+									<span>friday</span>
+								</label>
+								<label for="wednesday">
+									<input type="checkbox" name="wednesday" id="wednesday">
+									<span>wednesday</span>
+								</label>
+								<label for="saturday">
+									<input type="checkbox" name="saturday" id="saturday">
+									<span>saturday</span>
+								</label>
+							</div>
+						</div>
+						<div class="time-picker">
+							<img src="img/lazy.png" class="lazy" data-src="img/calendar.svg" alt="img">
+							<input type="text" name="time" class="choose-data datetimepicker" autocomplete="off" placeholder="Desired Start Date" readonly>
+						</div>
+						<button type="submit" class="button read-more mt-10">submit <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M0.505883 5.20577L0.491834 5.2027L6.51423 5.2027L4.62101 7.10009C4.5283 7.19272 4.47745 7.31821 4.47745 7.44992C4.47745 7.58162 4.5283 7.70623 4.62101 7.79909L4.91559 8.09382C5.00823 8.18645 5.13166 8.23767 5.2633 8.23767C5.39501 8.23767 5.51852 8.18682 5.61115 8.09418L8.85649 4.84913C8.94949 4.75613 9.00035 4.63226 8.99998 4.50048C9.00035 4.36796 8.94949 4.24401 8.85649 4.15116L5.61115 0.905818C5.51852 0.813257 5.39508 0.76233 5.2633 0.76233C5.13166 0.76233 5.00823 0.813331 4.91559 0.905818L4.62101 1.20055C4.5283 1.29304 4.47745 1.41655 4.47745 1.54826C4.47745 1.67989 4.5283 1.79689 4.62101 1.88945L6.53559 3.79745L0.499152 3.79745C0.227908 3.79745 -1.94412e-05 4.03123 -1.94175e-05 4.30233L-1.93811e-05 4.71918C-1.93574e-05 4.99028 0.23464 5.20577 0.505883 5.20577Z"/></svg></button>
+					</form>
+				</div>
+			</div>
+			<div class="quickLinks-desc" data-to-quick = '3'>
+				<div class="quickLinks-content">
+					<h4>Parent Resources</h4>
+					<div class="download-list">
+						<p>
+							<span>
+								<img src="img/lazy.png" class="lazy" data-src="img/handbook.svg" alt="img">
+								Parent Handbook (246 Kb)
+							</span>
+							<a href="#"><img src="img/lazy.png" class="lazy" data-src="img/pdf-ico.svg" alt="img">download</a>
+						</p>
+						<p>
+							<span>
+								<img src="img/lazy.png" class="lazy" data-src="img/checklist.svg" alt="img">
+								Child Care Checklist (95 KB)
+							</span>
+							<a href="#"><img src="img/lazy.png" class="lazy" data-src="img/pdf-ico.svg" alt="img">download</a>
+						</p>
+						<p>
+							<span>
+								<img src="img/lazy.png" class="lazy" data-src="img/paper-form.svg" alt="img">
+								Agreement Form (94 KB)
+							</span>
+							<a href="#"><img src="img/lazy.png" class="lazy" data-src="img/pdf-ico.svg" alt="img">download</a>
+						</p>
+						<p>
+							<span>
+								<img src="img/lazy.png" class="lazy" data-src="img/billing.svg" alt="img">
+								Monthly Billing Chart (95 KB)
+							</span>
+							<a href="#"><img src="img/lazy.png" class="lazy" data-src="img/pdf-ico.svg" alt="img">download</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="quickLinks-desc" data-to-quick = '4'>
+				<div class="quickLinks-content">
+					<h4>Our Contacts</h4>
+					<div class="contact-list">
+						<a href="#" target="_blank"><img src="img/lazy.png" class="lazy" data-src='img/map-marker-small.svg' alt="marker"> 3261 Anmoore Road Brooklyn, NY 11230</a>
+						<a href="tel:8001234567"><img src="img/lazy.png" class="lazy" data-src='img/call.svg' alt="call"> 800-123-4567, Fax: 718-724-3312</a>
+						<a href="mailto:officeone@youremail.com"><img src="img/lazy.png" class="lazy" data-src='img/envelope.svg' alt="img">officeone@youremail.com</a>
+						<p><img src="img/lazy.png" class="lazy" data-src='img/clock.svg' alt="img">Mon-Fri: 9:00 am – 5:00 pm<br>Sat: 11:00 am – 16:00 pm</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End quickLinks -->
+		<!-- Begin header -->
+		<header class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="top-line">
+							<a href="index.html" class="logo"><img src="img/company logo.PNG" alt="logo"></a>
+							<nav class="main-nav">
+								<ul class="main-nav-list">
+									<li>
+										<a href="index.html" class="active-link">Home</a>
+									</li>
+									<li>
+										<a href="about-us.html">About Us<i class="fas fa-angle-down"></i></a>
+										<ul class="tt-dropdown-menu">
+											<li>
+												<a href="Reasons_to_count_on_us.html">Reasons to count on us </a>
+											</li>
+											<li><a href="Staff.html">Staff</a></li>
+										</ul>
+									</li>
+									<li>
+										
+										<a href="MontessoriPhilosophy.html">Montessori<i class="fas fa-angle-down"></i></a>
+										<ul class="tt-dropdown-menu">
+											<li>
+												<a href="PracticalLife.html">Practical Life</a>
+											</li>
+											<li><a href="Sensorial.html">Sensorial</a></li>
+											<li>
+												<a href="Language.html">Language</a>
+											</li>
+											<li>
+												<a href="Math.html">Math</a>
+											</li>
+											<li><a href="Culture.html">Culture</a></li>
+																			   </ul>
+									</li>
+									<li>
+										
+										<a href="programs.html">Programs<i class="fas fa-angle-down"></i></a>
+										<ul class="tt-dropdown-menu">
+											<li>
+												<a href="Toddler.html">Toddler</a>
+											</li>
+											<li><a href="Primary.html">Primary</a></li>
+										</ul>
+									</li>
+									
+									<li>
+										<a href="#">Extended Care<i class="fas fa-angle-down"></i></a>
+										<ul class="tt-dropdown-menu">
+										   
+											<li><a href="">Enrichment activities</a></li>
+											<li>
+												<a href="">Lunch Bunch </a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Admissions <i class="fas fa-angle-down"></i></a>
+										<ul class="tt-dropdown-menu">
+											<li>
+												<a href="">Request Info</a>
+											</li>
+											<li>
+												<a href="">Schedule a Virtual Tour</a>
+											</li>
+											<li>
+												<a href="">How to Apply</a>
+											</li>
+											<li>
+												<a href="">Application</a>
+											</li>
+											<li>
+												<a href="">Schedule & Fees</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+									   
+											<a href="#">Pages <i class="fas fa-angle-down"></i></a>
+											<ul class="tt-dropdown-menu">
+											<li>
+												<a href="">FAQs</a>
+											</li>
+											<li>
+												<a href="">Monthly News</a>
+											</li>
+											<li><a href="">Summer Enrichment</a></li>
+											<li>
+												<a href="">Giving</a>
+											</li>
+											<a href="#">Services <i class="fas fa-angle-down"></i></a>
+											<ul class="tt-dropdown-menu">
+												<li>
+													<a href="">Speech Therapy (CARI/CHRI?)</a>
+												</li>
+												<li>
+													<a href="">Theatrical </a>
+												</li>
+											</ul>
+									   
+										</ul>
+									  
+									</li>
+									
+					
+									<li>
+										<a href="contacts.html">Contact Us</a>
+									</li>
+								</ul>
+								<div class="close-nav">
+									<svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M 10,10 L 30,30 M 30,10 L 10,30" fill="#3B4757"/>
+									</svg>
+								</div>
+							</nav>
+							<div class="header-controls">
+								<div class="header-search">
+									<i class="fas fa-search"></i>
+									<form action="#" class="search-form">
+										<input type="search" class="search" name="search" placeholder="Search...">
+										<button type="submit"><i class="fas fa-search"></i></button>
+									</form>
+								</div>
+								<div class="hamburger">
+									<svg viewBox="0 0 24 18" width="24" height="18"  fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.02857 2.31427H22.9714C23.5371 2.31427 24 1.85141 24 1.2857C24 0.719983 23.5371 0.257126 22.9714 0.257126H1.02857C0.462857 0.257126 0 0.719983 0 1.2857C0 1.85141 0.462857 2.31427 1.02857 2.31427Z" fill="#3B4757"/>
+										<path d="M1.02857 10.0285H22.9714C23.5371 10.0285 24 9.56567 24 8.99996C24 8.43425 23.5371 7.97139 22.9714 7.97139H1.02857C0.462857 7.97139 0 8.43425 0 8.99996C0 9.56567 0.462857 10.0285 1.02857 10.0285Z" fill="#3B4757"/>
+										<path d="M1.02857 17.7428H22.9714C23.5371 17.7428 24 17.28 24 16.7143C24 16.1485 23.5371 15.6857 22.9714 15.6857H1.02857C0.462857 15.6857 0 16.1485 0 16.7143C0 17.28 0.462857 17.7428 1.02857 17.7428Z" fill="#3B4757"/>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="top-img">
+				<img src="img/lazy.png" class="lazy" data-src="img/cloud.png" alt="cloud">
+			</div>
+			<div class="bottom-img">
+				<img src="img/lazy.png" class="lazy" data-src="img/cloud.png" alt="cloud">
+			</div>
+		</header>
+		<!-- End header -->
+		<main class="main-container">
+			<!-- Begin main slier -->
+			<div class="main-slider-wrap white-dots">
+				<div class="main-slider" data-slick-speed="4000" data-slick-autoplay="true">
+					<div class="sl-card">
+						<div class="container">
+							<div class="row">
+								<div class="col-12">
+									<div class="slide-content lazy" data-src="img/main-slider-rect.svg">
+										<img src="img/lazy.png" class="lazy" data-src="img/slider-ico.svg" alt="img">
+										<p class="content-text-cursive">Looking for a Centre where</p>
+										<p class="content-head"><span>Your Child</span><br>Will Be Safe?</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<picture>
+							<source type="image/webp" srcset="img/main-slider-1.webp">
+							<source type="image/jpeg" srcset="img/main-slider-1.jpg">
+							<img src="img/main-slider-1.jpg" class="slider-bg" alt="img">
+						</picture>
+					</div>
+					<div class="sl-card">
+						<div class="container">
+							<div class="row">
+								<div class="col-12">
+									<div class="slide-content lazy" data-src="img/main-slider-rect.svg">
+										<img src="img/lazy.png" class="lazy" data-src="img/slider-ico-2.svg" alt="img">
+										<p class="content-text-cursive">Where Fun Happens!</p>
+										<p class="content-head"><span>Educating</span><br>Your Children</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<picture>
+							<source type="image/webp" srcset="img/main-slider-2.webp">
+							<source type="image/jpeg" srcset="img/main-slider-2.jpg">
+							<img src="img/main-slider-2.jpg" class="slider-bg" alt="img">
+						</picture>
+					</div>
+				</div>
+			</div>
+			<!-- End main slier -->
+			<!-- Begin text-block -->
+			<section class="text-block pb-xs-30 pb-sm-50 pb-md-60 on-scroll">
+				<div class="container">
+					<div class="row align-items-sm-center align-items-lg-center">
+						<div class="col-md-6 on-scroll fade-left fade-scale">
+							<div class="svg-block">
+								<svg viewBox="0 0 526 502" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="../../www.w3.org/1999/xlink.html">
+									<mask id="img1" maskUnits="userSpaceOnUse" x="0" y="0" width="526" height="502">
+										<path d="M51 8.49999C125.8 -21.9 276.833 39.8333 343 74.5C288.5 32.5 323 18.5 347 20.5C371 22.5 432.5 44.5 467.5 68C495.5 86.8 491.167 99.8333 485.5 104C489.333 108.333 499.7 121.5 510.5 139.5C524 162 532.5 183.5 517 210C504.6 231.2 446.833 231.833 421 229.5C419.667 229.5 422.4 233.9 444 251.5C471 273.5 495.5 299.5 493.5 330.5C491.9 355.3 436.833 363.833 409.5 365C410.5 368.5 409.8 376.9 399 382.5C388.2 388.1 355.833 387.5 341 386.5C364.167 399 410.3 428.9 409.5 448.5C408.5 473 386.5 492 344 488C301.5 484 238 444.5 250 452.5C262 460.5 280 481.5 271.5 492C263 502.5 236 504.5 216.5 496C197 487.5 81.5 440.5 67.5 397.5C53.5 354.5 83.5 367 81.5 359.5C79.5 352 53 346.5 25.5 293C3.50001 250.2 34.5 226.5 58 224.5C54.8333 224.5 40.3 217.8 23.5 191C6.7 164.2 25.8333 142.5 37.5 135C35.5 133.167 30.6 128.6 27 125C22.5 120.5 -42.5 46.5 51 8.49999Z" fill="#C4C4C4"/>
+									</mask>
+									<g mask="url(#img1)">
+										<rect y="-13" width="750" height="523" fill="url(#pattern0)"/>
+									</g>
+									<defs>
+										<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+											<use xlink:href="#for-img1" transform="scale(0.00133333 0.00191205)"/>
+										</pattern>
+										<image id="for-img1" width="750" height="523" xlink:href="img/svg-block-1.jpg"></image>
+									</defs>
+								</svg>
+							</div>
+						</div>
+						<div class="col-md-6 on-scroll fade-up fade-scale pt-xs-35 pt-md-0">
+							<div class="block-header mb-xs-25 mb-md-25">
+								<p class="mb-xs-15 mb-lg-8">Where work and play come together</p>
+								<h2 class="mb-xs-25 mb-md-25"><span>The Center</span> for Early Childhood Education</h2>
+							</div>
+							<p class="mb-xs-20 mb-md-30">We provide an innovative, nurturing and stimulating environment where children develop independence, confidence and a positive sense of self and the world around them. Our curriculum is designed to involve children in experiences that enhance language, literacy, music, movement, art and socialization. Through play, all areas of development are fostered.</p>
+							<a href="about-us.html" class="read-more">read more <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M0.505883 5.20577L0.491834 5.2027L6.51423 5.2027L4.62101 7.10009C4.5283 7.19272 4.47745 7.31821 4.47745 7.44992C4.47745 7.58162 4.5283 7.70623 4.62101 7.79909L4.91559 8.09382C5.00823 8.18645 5.13166 8.23767 5.2633 8.23767C5.39501 8.23767 5.51852 8.18682 5.61115 8.09418L8.85649 4.84913C8.94949 4.75613 9.00035 4.63226 8.99998 4.50048C9.00035 4.36796 8.94949 4.24401 8.85649 4.15116L5.61115 0.905818C5.51852 0.813257 5.39508 0.76233 5.2633 0.76233C5.13166 0.76233 5.00823 0.813331 4.91559 0.905818L4.62101 1.20055C4.5283 1.29304 4.47745 1.41655 4.47745 1.54826C4.47745 1.67989 4.5283 1.79689 4.62101 1.88945L6.53559 3.79745L0.499152 3.79745C0.227908 3.79745 -1.94412e-05 4.03123 -1.94175e-05 4.30233L-1.93811e-05 4.71918C-1.93574e-05 4.99028 0.23464 5.20577 0.505883 5.20577Z"/></svg></a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Begin text-block -->
+			<!-- Begin education-slier -->
+			<section class="wave-block mb-xs-65 mb-md-60 mb-lg-120 pb-xs-130 pb-md-120 pb-lg-150 pt-xs-90 pt-md-120 pt-lg-180 lazy" data-src="img/blue-wave.png">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="section-header on-scroll">
+								<p class="h-sub">We are dedicated to the care and education</p>
+								<h2>Our Educational Programs</h2>
+								<p>Our exclusive curricula, combined with our own digital lesson planning tool, enable teachers to create personalized learning experiences, appropriate to every age group.</p>
+							</div>
+							<div class="education-slier on-scroll fade-up" data-show-count="3" data-show-count-md="2" data-show-count-mob="1" data-slick-speed="5000" data-slick-autoplay="true">
+								<div class="it-card">
+									<div class="education-short">
+										<div class="education-top">
+											<!-- <img src="img/lazy.png" class="lazy" data-src="img/educational-1.jpg" alt="img"> -->
+											<picture>
+												<source type="image/webp" srcset="img/educational-1.webp">
+												<source type="image/jpeg" srcset="img/educational-1.jpg">
+												<img src="img/educational-1.jpg" alt="img">
+											</picture>
+											<div class="hide-block">
+												<div class="inner-wrap">
+													<p>In the first year of life, babies develop a basic sense of self and others, form attachments, and learn to speak their first words—a most important time for development.</p>
+													<div class="education-short-info">
+														<p><span>Enrollment:</span> 5</p>
+														<p><span>Staff Ratio:</span> 1 to 5</p>
+													</div>
+													<a href="programs.html" class="read-more">book a tour <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">< <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M0.505883 5.20577L0.491834 5.2027L6.51423 5.2027L4.62101 7.10009C4.5283 7.19272 4.47745 7.31821 4.47745 7.44992C4.47745 7.58162 4.5283 7.70623 4.62101 7.79909L4.91559 8.09382C5.00823 8.18645 5.13166 8.23767 5.2633 8.23767C5.39501 8.23767 5.51852 8.18682 5.61115 8.09418L8.85649 4.84913C8.94949 4.75613 9.00035 4.63226 8.99998 4.50048C9.00035 4.36796 8.94949 4.24401 8.85649 4.15116L5.61115 0.905818C5.51852 0.813257 5.39508 0.76233 5.2633 0.76233C5.13166 0.76233 5.00823 0.813331 4.91559 0.905818L4.62101 1.20055C4.5283 1.29304 4.47745 1.41655 4.47745 1.54826C4.47745 1.67989 4.5283 1.79689 4.62101 1.88945L6.53559 3.79745L0.499152 3.79745C0.227908 3.79745 -1.94412e-05 4.03123 -1.94175e-05 4.30233L-1.93811e-05 4.71918C-1.93574e-05 4.99028 0.23464 5.20577 0.505883 5.20577Z"></path></svg>path d="M0.505883 5.20577L0.491834 5.2027L6.51423 5.2027L4.62101 7.10009C4.5283 7.19272 4.47745 7.31821 4.47745 7.44992C4.47745 7.58162 4.5283 7.70623 4.62101 7.79909L4.91559 8.09382C5.00823 8.18645 5.13166 8.23767 5.2633 8.23767C5.39501 8.23767 5.51852 8.18682 5.61115 8.09418L8.85649 4.84913C8.94949 4.75613 9.00035 4.63226 8.99998 4.50048C9.00035 4.36796 8.94949 4.24401 8.85649 4.15116L5.61115 0.905818C5.51852 0.813257 5.39508 0.76233 5.2633 0.76233C5.13166 0.76233 5.00823 0.813331 4.91559 0.905818L4.62101 1.20055C4.5283 1.29304 4.47745 1.41655 4.47745 1.54826C4.47745 1.67989 4.5283 1.79689 4.62101 1.88945L6.53559 3.79745L0.499152 3.79745C0.227908 3.79745 -1.94412e-05 4.03123 -1.94175e-05 4.30233L-1.93811e-05 4.71918C-1.93574e-05 4.99028 0.23464 5.20577 0.505883 5.20577Z"></path></svg></a>
+												</div>
+											</div>
+										</div>
+										<div class="education-bottom">
+											<p>Infants <span class="education-age">3-12</span> <span class="old">Months</span></p>
+										</div>
+										<!-- educational-1 -->
+									</div>
+								</div>
+								<div class="it-card">
+									<div class="education-short color-2">
+										<div class="education-top">
+											<!-- <img src="img/lazy.png" class="lazy" data-src="img/educational-1.jpg" alt="img"> -->
+											<picture>
+												<source type="image/webp" srcset="img/educational-2.webp">
+												<source type="image/jpeg" srcset="img/educational-2.jpg">
+												<img src="img/educational-2.jpg" alt="img">
+											</picture>
+											<div class="hide-block">
+												<div class="inner-wrap">
+													<p>Energy. Excitement. Motion. These are the qualities that define a toddler and they are used in this program to power positive learning experiences.</p>
+													<div class="education-short-info">
+														<p><span>Enrollment:</span> 10</p>
+														<p><span>Staff Ratio:</span> 1 to 5</p>
+													</div>
+													<a href="programs.html" class="read-more">book a tour <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M0.505883 5.20577L0.491834 5.2027L6.51423 5.2027L4.62101 7.10009C4.5283 7.19272 4.47745 7.31821 4.47745 7.44992C4.47745 7.58162 4.5283 7.70623 4.62101 7.79909L4.91559 8.09382C5.00823 8.18645 5.13166 8.23767 5.2633 8.23767C5.39501 8.23767 5.51852 8.18682 5.61115 8.09418L8.85649 4.84913C8.94949 4.75613 9.00035 4.63226 8.99998 4.50048C9.00035 4.36796 8.94949 4.24401 8.85649 4.15116L5.61115 0.905818C5.51852 0.813257 5.39508 0.76233 5.2633 0.76233C5.13166 0.76233 5.00823 0.813331 4.91559 0.905818L4.62101 1.20055C4.5283 1.29304 4.47745 1.41655 4.47745 1.54826C4.47745 1.67989 4.5283 1.79689 4.62101 1.88945L6.53559 3.79745L0.499152 3.79745C0.227908 3.79745 -1.94412e-05 4.03123 -1.94175e-05 4.30233L-1.93811e-05 4.71918C-1.93574e-05 4.99028 0.23464 5.20577 0.505883 5.20577Z"></path></svg></a>
+												</div>
+											</div>
+										</div>
+										<div class="education-bottom">
+											<p>Toddler <span class="education-age">1-3</span> <span class="old">Years</span></p>
+										</div>
+										<!-- educational-1 -->
+									</div>
+								</div>
+								<div class="it-card">
+									<div class="education-short color-3">
+										<div class="education-top">
+											<!-- <img src="img/lazy.png" class="lazy" data-src="img/educational-1.jpg" alt="img"> -->
+											<picture>
+												<source type="image/webp" srcset="img/educational-3.webp">
+												<source type="image/jpeg" srcset="img/educational-3.jpg">
+												<img src="img/educational-3.jpg" alt="img">
+											</picture>
+											<div class="hide-block">
+												<div class="inner-wrap">
+													<p>Students will receive traditional education in science, engineering, the arts, and math and will be tracked academically and socially through continuous assessments.</p>
+													<div class="education-short-info">
+														<p><span>Enrollment:</span> 12</p>
+														<p><span>Staff Ratio:</span> 1 to 5</p>
+													</div>
+													<a href="programs.html" class="read-more">book a tour <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M0.505883 5.20577L0.491834 5.2027L6.51423 5.2027L4.62101 7.10009C4.5283 7.19272 4.47745 7.31821 4.47745 7.44992C4.47745 7.58162 4.5283 7.70623 4.62101 7.79909L4.91559 8.09382C5.00823 8.18645 5.13166 8.23767 5.2633 8.23767C5.39501 8.23767 5.51852 8.18682 5.61115 8.09418L8.85649 4.84913C8.94949 4.75613 9.00035 4.63226 8.99998 4.50048C9.00035 4.36796 8.94949 4.24401 8.85649 4.15116L5.61115 0.905818C5.51852 0.813257 5.39508 0.76233 5.2633 0.76233C5.13166 0.76233 5.00823 0.813331 4.91559 0.905818L4.62101 1.20055C4.5283 1.29304 4.47745 1.41655 4.47745 1.54826C4.47745 1.67989 4.5283 1.79689 4.62101 1.88945L6.53559 3.79745L0.499152 3.79745C0.227908 3.79745 -1.94412e-05 4.03123 -1.94175e-05 4.30233L-1.93811e-05 4.71918C-1.93574e-05 4.99028 0.23464 5.20577 0.505883 5.20577Z"></path></svg></a>
+												</div>
+											</div>
+										</div>
+										<div class="education-bottom">
+											<p>Preschool <span class="education-age">3-4</span> <span class="old">Years</span></p>
+										</div>
+										<!-- educational-1 -->
+									</div>
+								</div>
+								<div class="it-card">
+									<div class="education-short color-4">
+										<div class="education-top">
+											<!-- <img src="img/lazy.png" class="lazy" data-src="img/educational-1.jpg" alt="img"> -->
+											<picture>
+												<source type="image/webp" srcset="img/educational-4.webp">
+												<source type="image/jpeg" srcset="img/educational-4.jpg">
+												<img src="img/educational-4.jpg" alt="img">
+											</picture>
+											<div class="hide-block">
+												<div class="inner-wrap">
+													<p>This program preps your child with lessons in forming and maintaining a positive attitude towards independent learning, and mastering gross as well as fine motor skills.</p>
+													<div class="education-short-info">
+														<p><span>Enrollment:</span> 12</p>
+														<p><span>Staff Ratio:</span> 1 to 5</p>
+													</div>
+													<a href="programs.html" class="read-more">book a tour <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M0.505883 5.20577L0.491834 5.2027L6.51423 5.2027L4.62101 7.10009C4.5283 7.19272 4.47745 7.31821 4.47745 7.44992C4.47745 7.58162 4.5283 7.70623 4.62101 7.79909L4.91559 8.09382C5.00823 8.18645 5.13166 8.23767 5.2633 8.23767C5.39501 8.23767 5.51852 8.18682 5.61115 8.09418L8.85649 4.84913C8.94949 4.75613 9.00035 4.63226 8.99998 4.50048C9.00035 4.36796 8.94949 4.24401 8.85649 4.15116L5.61115 0.905818C5.51852 0.813257 5.39508 0.76233 5.2633 0.76233C5.13166 0.76233 5.00823 0.813331 4.91559 0.905818L4.62101 1.20055C4.5283 1.29304 4.47745 1.41655 4.47745 1.54826C4.47745 1.67989 4.5283 1.79689 4.62101 1.88945L6.53559 3.79745L0.499152 3.79745C0.227908 3.79745 -1.94412e-05 4.03123 -1.94175e-05 4.30233L-1.93811e-05 4.71918C-1.93574e-05 4.99028 0.23464 5.20577 0.505883 5.20577Z"></path></svg></a>
+												</div>
+											</div>
+										</div>
+										<div class="education-bottom">
+											<p>Pre- Kindergarten <span class="education-age">4-5</span> <span class="old">Years</span></p>
+										</div>
+										<!-- educational-1 -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End education-slier -->
+			<!-- Begin learning element -->
+			<section class="mb-xs-45 mb-md-90 mb-lg-120 learning-elements-section">
+				<div class="container">
+					<div class="row align-items-lg-center">
+						<div class="col-lg-6 on-scroll fade-left">
+							<div class="block-header">
+								<p class="mb-xs-15 mb-lg-8">We provide the main activities</p>
+								<h2 class="mb-xs-25 mb-md-25"><span>Elements</span> of Learning. Committed to Excellence</h2>
+							</div>
+							<p class="mb-xs-15 mb-lg-8">Our curriculum is based on the research of the most renowned education experts. Designed by our education team, it’s created to support these important early years, to inspire children to be bold explorers today and joyful, confident learners for life.</p>
+							<p class="mb-xs-20 mb-md-37">We believe that children learn best through play and are inspired by child based learning. We have several different areas of play in each of our groups.</p>
+							<a href="#" class="read-more">read more <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M0.505883 5.20577L0.491834 5.2027L6.51423 5.2027L4.62101 7.10009C4.5283 7.19272 4.47745 7.31821 4.47745 7.44992C4.47745 7.58162 4.5283 7.70623 4.62101 7.79909L4.91559 8.09382C5.00823 8.18645 5.13166 8.23767 5.2633 8.23767C5.39501 8.23767 5.51852 8.18682 5.61115 8.09418L8.85649 4.84913C8.94949 4.75613 9.00035 4.63226 8.99998 4.50048C9.00035 4.36796 8.94949 4.24401 8.85649 4.15116L5.61115 0.905818C5.51852 0.813257 5.39508 0.76233 5.2633 0.76233C5.13166 0.76233 5.00823 0.813331 4.91559 0.905818L4.62101 1.20055C4.5283 1.29304 4.47745 1.41655 4.47745 1.54826C4.47745 1.67989 4.5283 1.79689 4.62101 1.88945L6.53559 3.79745L0.499152 3.79745C0.227908 3.79745 -1.94412e-05 4.03123 -1.94175e-05 4.30233L-1.93811e-05 4.71918C-1.93574e-05 4.99028 0.23464 5.20577 0.505883 5.20577Z"/></svg></a>
+						</div>
+						<div class="col-lg-6 on-scroll fade-up">
+							<div class="el-wr">
+								<div class="learning-elements-wrap">
+									<div class="circle-container">
+										<div class="learning-item" data-learn-tab="#0">
+											<img src="img/gardering.svg" alt="img">
+											<p>Gardening</p>
+										</div>
+										<div class="learning-item" data-learn-tab='#1'>
+											<img src="img/sport.svg" alt="img">
+											<p>Sport</p>
+										</div>
+										<div class="learning-item" data-learn-tab='#2'>
+											<img src="img/art.svg" alt="img">
+											<p>Art</p>
+										</div>
+										<div class="learning-item" data-learn-tab='#3'>
+											<img src="img/excursions.svg" alt="img">
+											<p>Excursions</p>
+										</div>
+										<div class="learning-item" data-learn-tab='#4'>
+											<img src="img/outdoor.svg" alt="img">
+											<p>Outdoor</p>
+										</div>
+										<div class="learning-item" data-learn-tab='#5'>
+											<img src="img/math.svg" alt="img">
+											<p>Math</p>
+										</div>
+										<div class="learning-item" data-learn-tab='#6'>
+											<img src="img/literacy.svg" alt="img">
+											<p>Literacy</p>
+										</div>
+									</div>
+									<div class="tab-element-content">
+										<div class="for-tab start">
+											<h3>Curriculum<br>Elements</h3>
+										</div>
+										<div class="for-tab" id="0">
+											<h3>Gardening</h3>
+											<p class="mb-0">The Toddler and Preschool Groups have a garden in their outdoor space. Each spring, the children and teachers contribute and create beautiful and educational container/raised bed gardens.</p>
+										</div>
+										<div class="for-tab" id="1">
+											<h3>Sport</h3>
+											<p class="mb-0">Children need to develop large motor and small motor skills and cardiovascular endurance. Extensive physical activity is also needed to address a growing problem of obesity in American children.</p>
+										</div>
+										<div class="for-tab" id="2">
+											<h3>Art</h3>
+											<p class="mb-0">Kids will love designing and creating puppets and collages, constructing musical instruments and flower bouquets, and painting, gluing, and crafting to their hearts’ content!</p>
+										</div>
+										<div class="for-tab" id="3">
+											<h3>Excursions</h3>
+											<p class="mb-0">Excursions form a vital part of a child’s early education. They expose a child to a range of different experiences and enable them to gain a sense of the world in which they find themselves.</p>
+										</div>
+										<div class="for-tab" id="4">
+											<h3>Outdoor</h3>
+											<p class="mb-0">Our children benefit from a variety of outdoor play spaces. In addition to our playground, they experience the natural wonders of the forest, the big field, our raised gardens and nature walks.</p>
+										</div>
+										<div class="for-tab" id="5">
+											<h3>Math</h3>
+											<p class="mb-0">A preschool math curriculum should be taught using preschool lessons including interactive activities, learning games, printable worksheets, assessments, and reinforcement.</p>
+										</div>
+										<div class="for-tab" id="6">
+											<h3>Literacy</h3>
+											<p class="mb-0">A systematic and integrated literacy program promote language development preschool children. The program uses systematic, direct instruction built around a series of weekly books in the classroom.</p>
+										</div>
+									</div>
+									<div class="my-paroller" data-paroller-factor="0.3" data-paroller-type="foreground" data-paroller-direction="vertical">
+										<img src="img/lazy.png" class="lazy" data-src="img/cloud.png" alt="img">
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End learning element -->
+			<section class="video-section mb-xs-50 mb-md-75 mb-lg-120 lazy" data-src="img/wave-video.svg">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-sm-8 col-lg-6 on-scroll fade-up">
+							<h2 class="mb-xs-25 mb-md-25">We Create a Nurturing Environment <span class="main-color-font dib">for Each Child</span></h2>
+							<p class="mb-xs-20 mb-md-37">Thought open ended play based experiences children flourish, and grow to love their school, taking pride in belonging to a community</p>
+							<a href="../../www.youtube.com/watch6a31.html?v=NkfKechADow" class="video-btn" data-toggle="lightbox"><span class="play-ico animate"><span><img src="img/lazy.png" class="lazy" data-src='img/play.png' alt="img"></span></span> view video</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Begin advantage listing -->
+			<section class="mb-xs-60 mb-sm-70 mb-md-90 mb-lg-120">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="section-header on-scroll">
+								<p class="h-sub">Read on to understand our differene</p>
+								<h2>Why Choose ChildiT</h2>
+							</div>
+							<ol class="advantage-list pt-xs-0 pt-md-0 pt-lg-20">
+								<li class="on-scroll fade-up">
+									<div class="advantage-block">
+										<h5>Home-like Environment</h5>
+										<p>Children are comfortable and confident in their home, feeling safe and secure to explore and learn.</p>
+									</div>
+								</li>
+								<li class="on-scroll fade-up">
+									<div class="advantage-block">
+										<h5>Loving Language</h5>
+										<p>90% success rate of children reading before they go to school for children attending more than 12 months.</p>
+									</div>
+								</li>
+								<li class="on-scroll fade-up">
+									<div class="advantage-block">
+										<h5>30 Day Moneyback Guarantee</h5>
+										<p>If you’re not completely satisfied we will refund your money, no questions asked.</p>
+									</div>
+								</li>
+								<li class="on-scroll fade-up">
+									<div class="advantage-block">
+										<h5>Culture of Honour</h5>
+										<p>We aim to help all people that come into contact with ChildiT to feel Significant, Appreciated and Understood.</p>
+									</div>
+								</li>
+								<li class="on-scroll fade-up">
+									<div class="advantage-block">
+										<h5>Orientation Process</h5>
+										<p>Makes the process of you and your child settling into care with ChildiT that much smoother.</p>
+									</div>
+								</li>
+								<li class="on-scroll fade-up">
+									<div class="advantage-block">
+										<h5>Quality Educators</h5>
+										<p>Trusted, highly trained and hand-picked Educators. We believe that educators play a huge role in quality child care.</p>
+									</div>
+								</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End advantage listing -->
+			<!-- Begin foods -->
+			<section class="food-section wave-block reverce-wave bg-cover pb-xs-90 pb-md-120 pb-lg-150 pt-xs-70 pt-md-110 pt-lg-170 mb-xs-50 mb-md-75 mb-lg-120 lazy" data-src="img/gray_wave-1.svg">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-md-6 on-scroll fade-left">
+							<div class="block-header">
+								<p class="mb-xs-15 mb-lg-8">Children need healthy, wholesome foods</p>
+								<h2 class="mb-xs-25 mb-md-25"><span>Healthy</span> Food for Growing Children</h2>
+							</div>
+							<p class="mb-xs-20 mb-md-45">By eating family-style and serving themselves, children learn about making healthy choices and the connection between food and community.</p>
+							<div class="icons-list bm-0">
+								<div class="icon square-icon">
+									<img src="img/fruits.png" alt="alt">
+									<p>Fruits</p>
+								</div>
+								<div class="icon square-icon">
+									<img src="img/vegetables.png" alt="alt">
+									<p>Vegetables</p>
+								</div>
+								<div class="icon square-icon">
+									<img src="img/grains.png" alt="alt">
+									<p>Grains</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 on-scroll fade-up">
+							<div class="svg-block">
+								<svg viewBox="0 0 526 502" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="../../www.w3.org/1999/xlink.html">
+									<mask id="img1-food" maskUnits="userSpaceOnUse" x="0" y="0" width="526" height="502">
+										<path d="M51 8.49999C125.8 -21.9 276.833 39.8333 343 74.5C288.5 32.5 323 18.5 347 20.5C371 22.5 432.5 44.5 467.5 68C495.5 86.8 491.167 99.8333 485.5 104C489.333 108.333 499.7 121.5 510.5 139.5C524 162 532.5 183.5 517 210C504.6 231.2 446.833 231.833 421 229.5C419.667 229.5 422.4 233.9 444 251.5C471 273.5 495.5 299.5 493.5 330.5C491.9 355.3 436.833 363.833 409.5 365C410.5 368.5 409.8 376.9 399 382.5C388.2 388.1 355.833 387.5 341 386.5C364.167 399 410.3 428.9 409.5 448.5C408.5 473 386.5 492 344 488C301.5 484 238 444.5 250 452.5C262 460.5 280 481.5 271.5 492C263 502.5 236 504.5 216.5 496C197 487.5 81.5 440.5 67.5 397.5C53.5 354.5 83.5 367 81.5 359.5C79.5 352 53 346.5 25.5 293C3.50001 250.2 34.5 226.5 58 224.5C54.8333 224.5 40.3 217.8 23.5 191C6.7 164.2 25.8333 142.5 37.5 135C35.5 133.167 30.6 128.6 27 125C22.5 120.5 -42.5 46.5 51 8.49999Z" fill="#C4C4C4"/>
+									</mask>
+									<g mask="url(#img1-food)">
+										<rect y="-13" width="750" height="523" fill="url(#pattern-food-children)"/>
+									</g>
+									<defs>
+										<pattern id="pattern-food-children" patternContentUnits="objectBoundingBox" width="1" height="1">
+											<use xlink:href="#for-img1-food" transform="scale(0.00133333 0.00191205)"/>
+										</pattern>
+										<image id="for-img1-food" width="750" height="523" xlink:href="img/children-food.jpg"></image>
+									</defs>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End foods -->
+			<!-- Begin centre-information -->
+			<section class="centre-information-section mb-xs-50 mb-sm-60 mb-md-70 mb-lg-120">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="section-header mb-xs-30 mb-md-31 on-scroll">
+								<p class="h-sub">Want to know more about us?</p>
+								<h2>Centre Information</h2>
+							</div>
+							<div class="my-paroller" data-paroller-factor="0.3" data-paroller-type="foreground" data-paroller-direction="vertical">
+								<img src="img/lazy.png" class="lazy" data-src="img/cloud.png" alt="img">
+							</div>
+							<div class="centre-tabs on-scroll fade-up" data-tab-group>
+								<div class="centre-tabs-controls">
+									<ul class="centre-tab-list" data-tab-head>
+										<li><a href="#" id="centreTab1" class="active">Our Philosophy</a></li>
+										<li><a href="#" id="centreTab2">Our Values</a></li>
+										<li><a href="#" id="centreTab3">Our Teachers</a></li>
+										<li><a href="#" id="centreTab4">Parents Say</a></li>
+									</ul>
+								</div>
+								<div class="centre-tabs-wrap" data-tab-content>
+									<div class="centre-tab-content tab-content">
+										<p class="tab-head">We believe children learn by building on the knowledge they already have – primarily exhibited through play. Teachers help children learn by creating a rich environment to explore via exciting educational activities.</p>
+										<ol class="order-list-2 adventage-slider" data-show-count='3' data-show-count-md='2' data-show-count-mob='1' data-slick-speed="5000" data-slick-autoplay="true">
+											<li>
+												<div class="list-description">
+													<h5 class="mb-15">Image of the child</h5>
+													<p>Teachers can then shape and build on that knowledge by discovering what children already know through observation, one-on-one conversation, clarification, and invitation to explore the world around them.</p>
+												</div>
+											</li>
+											<li>
+												<div class="list-description">
+													<h5 class="mb-15">Positive Discipline</h5>
+													<p>Spanking or other methods of corporal punishment are never to be used as a means of disciplining students. This no spanking policy extends to parents with their own children while at school or school sponsored events.</p>
+												</div>
+											</li>
+											<li>
+												<div class="list-description">
+													<h5 class="mb-15">Environment is important</h5>
+													<p>We like to work and play in attractive surroundings so our buildings are clean, relatively tidy, and pleasing to the eye. The outdoor environments are large, have colourful and interesting gardens, and a variety of activities.</p>
+												</div>
+											</li>
+										</ol>
+									</div>
+									<div class="centre-tab-content tab-content">
+										<div class="tab-values">
+											<div class="row">
+												<div class="col-lg-6">
+													<div class="tab-values__img">
+														<img src="img/lazy.png" class="lazy" data-src="img/values.jpg" alt="img">
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="tab-values__description">
+														<p>Positive, Safe Environment – We are committed to providing an uplifting and positive atmosphere for our children and staff; a fun learning experience in a secure, safe, and loving environment.</p>
+														<ul>
+															<li>
+																<p><strong>Leadership</strong> – We are committed to lead; developing, mentoring, and empowering our children and our staff to reach their full potential.</p>
+															</li>
+															<li>
+																<p><strong>Excellence</strong> – We are committed to achieve the greatest levels of excellence in childcare, in education and in everything we do; being highly professional, innovative, creative, efficient, and effective.</p>
+															</li>
+															<li>
+																<p><strong>Respect</strong> – We are committed to building strong, healthy relationships with each other, our children & their families, along with the community through communication and understanding of the cultures around us.</p>
+															</li>
+															<li>
+																<p><strong>Integrity</strong> – We are committed to carry out our mission.</p>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="centre-tab-content tab-content">
+										<p class="tab-head">We have a focus on recruiting and retaining quality teachers and offer competitive remuneration, good student discipline and relatively small class sizes</p>
+										<div class="teacher-slider" data-show-count='3' data-show-count-md='2' data-show-count-sm='1' data-show-count-mob='1' data-slick-speed="5000" data-slick-autoplay="true">
+											<div class="teacher-slide">
+												<div class="teacher-card">
+													<div class="teacher-card__info">
+														<div class="teacher-card_text">
+															<h5>Lindsay</h5>
+															<p class="main-color-font">Infant Classroom</p>
+															<p>She has never tired of the “ah-ha” moments and the pride that swells in a little one who is learning to do something for the first time.</p>
+														</div>
+														<ul class="soc-link soc-link__bg">
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/facebook.svg' title='Facebook' alt="facebook">
+															</a></li>
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/twitter.svg' title='Twitter' alt="twitter">
+															</a></li>
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/instagram.svg' title='Instagram' alt="nstagram">
+															</a></li>
+														</ul>
+													</div>
+													<picture>
+														<source type="image/webp" srcset="img/teacher1.webp">
+														<source type="image/jpeg" srcset="img/teacher1.jpg">
+														<img src="img/img/teacher1.html" class="teacher-card__avatar extra__avatar" alt="avatar">
+													</picture>
+												</div>
+											</div>
+											<div class="teacher-slide">
+												<div class="teacher-card">
+													<div class="teacher-card__info">
+														<div class="teacher-card_text">
+															<h5>Kate</h5>
+															<p class="main-color-font">Infant Classroom</p>
+															<p>She has never tired of the “ah-ha” moments and the pride that swells in a little one who is learning to do something for the first time.</p>
+														</div>
+														<ul class="soc-link soc-link__bg">
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/facebook.svg' title='Facebook' alt="facebook">
+															</a></li>
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/twitter.svg' title='Twitter' alt="twitter">
+															</a></li>
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/instagram.svg' title='Instagram' alt="nstagram">
+															</a></li>
+														</ul>
+													</div>
+													<picture>
+														<source type="image/webp" srcset="img/teacher2.webp">
+														<source type="image/jpeg" srcset="img/teacher2.jpg">
+														<img src="img/img/teacher2.html" class="teacher-card__avatar" alt="avatar">
+													</picture>
+												</div>
+											</div>
+											<div class="teacher-slide">
+												<div class="teacher-card">
+													<div class="teacher-card__info">
+														<div class="teacher-card_text">
+															<h5>Lindsay</h5>
+															<p class="main-color-font">Infant Classroom</p>
+															<p>She has never tired of the “ah-ha” moments and the pride that swells in a little one who is learning to do something for the first time.</p>
+														</div>
+														<ul class="soc-link soc-link__bg">
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/facebook.svg' title='Facebook' alt="facebook">
+															</a></li>
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/twitter.svg' title='Twitter' alt="twitter">
+															</a></li>
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/instagram.svg' title='Instagram' alt="nstagram">
+															</a></li>
+														</ul>
+													</div>
+													<picture>
+														<source type="image/webp" srcset="img/teacher3.webp">
+														<source type="image/jpeg" srcset="img/teacher3.jpg">
+														<img src="img/img/teacher3.html" class="teacher-card__avatar extra__avatar02" alt="avatar">
+													</picture>
+												</div>
+											</div>
+											<div class="teacher-slide">
+												<div class="teacher-card">
+													<div class="teacher-card__info">
+														<div class="teacher-card_text">
+															<h5>Maria</h5>
+															<p class="main-color-font">Lead Theacher</p>
+															<p>Maria has a Masters degree in Early Childhood Education, a Montessori certification for children ages 3-6.</p>
+														</div>
+														<ul class="soc-link soc-link__bg">
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/facebook.svg' title='Facebook' alt="facebook">
+															</a></li>
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/twitter.svg' title='Twitter' alt="twitter">
+															</a></li>
+															<li><a href="#">
+																<img src="img/lazy.png" class="lazy" data-src='img/instagram.svg' title='Instagram' alt="instagram">
+															</a></li>
+														</ul>
+													</div>
+													<picture>
+														<source type="image/webp" srcset="img/teacher4.webp">
+														<source type="image/jpeg" srcset="img/teacher4.jpg">
+														<img src="img/img/teacher4.html" class="teacher-card__avatar" alt="avatar">
+													</picture>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="centre-tab-content tab-content">
+										<p class="tab-head">If you have feedback or words of praise that you would like to share, please submit your review at the bottom of this page.</p>
+										<div class="testimonial-wrap">
+											<ul class="testimonial-list testimonial-slider justify-content-center" data-show-count='3' data-show-count-md='2' data-show-count-mob='1' data-slick-speed="5000" data-slick-autoplay="true">
+												<li>
+													<div class="testimonial-block">
+														<div class="testimonial-img">
+															<img src="img/lazy.png" class="lazy" data-src="img/testimonials1.svg" alt="img">
+														</div>
+														<div class="testimonial-description">
+															<h5>Margaret Clausen</h5>
+															<time datetime="2019-03-19">19 March 2019</time>
+															<p>“It has been a wonderful year for us with all of our boys at The ChildIt and what fun they have had! The boys love their school...</p>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="testimonial-block">
+														<div class="testimonial-img">
+															<img src="img/lazy.png" class="lazy" data-src="img/testimonials2.svg" alt="img">
+														</div>
+														<div class="testimonial-description">
+															<h5>Jeffrey Sweeney</h5>
+															<time datetime="2019-03-19">19 March 2019</time>
+															<p>“During the art chapter in ChildIt my son has been so engaged and excited. He comes home and teaches our family the artists...</p>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="testimonial-block">
+														<div class="testimonial-img">
+															<img src="img/lazy.png" class="lazy" data-src=img/testimonials3.svg alt="img">
+														</div>
+														<div class="testimonial-description">
+															<h5>Tabitha Haak</h5>
+															<time datetime="2019-03-19">19 March 2019</time>
+															<p>“Thank you for being such a wonderful teacher to both us and Nathan. We were so fortunate to have been able to send...</p>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="d-flex justify-content-center pt-50 w-100">
+											<a href="testimonials.html" class="read-more">view more <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M0.505883 5.20577L0.491834 5.2027L6.51423 5.2027L4.62101 7.10009C4.5283 7.19272 4.47745 7.31821 4.47745 7.44992C4.47745 7.58162 4.5283 7.70623 4.62101 7.79909L4.91559 8.09382C5.00823 8.18645 5.13166 8.23767 5.2633 8.23767C5.39501 8.23767 5.51852 8.18682 5.61115 8.09418L8.85649 4.84913C8.94949 4.75613 9.00035 4.63226 8.99998 4.50048C9.00035 4.36796 8.94949 4.24401 8.85649 4.15116L5.61115 0.905818C5.51852 0.813257 5.39508 0.76233 5.2633 0.76233C5.13166 0.76233 5.00823 0.813331 4.91559 0.905818L4.62101 1.20055C4.5283 1.29304 4.47745 1.41655 4.47745 1.54826C4.47745 1.67989 4.5283 1.79689 4.62101 1.88945L6.53559 3.79745L0.499152 3.79745C0.227908 3.79745 -1.94412e-05 4.03123 -1.94175e-05 4.30233L-1.93811e-05 4.71918C-1.93574e-05 4.99028 0.23464 5.20577 0.505883 5.20577Z"/></svg></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End centre-information -->
+			<!-- Begin gallery section -->
+			<section class="wave-block wave-gallery reverce-wave pb-xs-90 pb-md-130 pb-lg-150 pt-xs-75 pt-md-115 pt-lg-150 bg-cover mb-xs-55 mb-md-75 mb-lg-120 lazy" data-src="img/wave-pink.svg">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="section-header on-scroll">
+								<p class="h-sub">Checkout our Instagram feed</p>
+								<h2><span class="main-color-font">#ChildiT</span> Centre Photo Gallery</h2>
+							</div>
+							<div class="gallery-prewiev-wrap on-scroll fade-up">
+								<div class="gallery-item">
+									<a href="img/gallery-1-x2.jpg" data-gallery="example-gallery">
+										<picture>
+											<source type="image/webp" srcset="img/gallery-1-1.webp">
+											<source type="image/jpeg" srcset="img/gallery-1-1.jpg">
+											<img src="img/gallery-1-1.jpg" alt="img">
+										</picture>
+									</a>
+								</div>
+								<div class="gallery-item">
+									<a href="img/gallery-2-x2.jpg" data-gallery="example-gallery">
+										<picture>
+											<source type="image/webp" srcset="img/gallery-2.webp">
+											<source type="image/jpeg" srcset="img/gallery-2.jpg">
+											<img src="img/gallery-2.jpg" alt="img">
+										</picture>
+									</a>
+								</div>
+								<div class="gallery-item">
+									<a href="img/gallery-3-x2.jpg" data-gallery="example-gallery">
+										<picture>
+											<source type="image/webp" srcset="img/gallery-3.webp">
+											<source type="image/jpeg" srcset="img/gallery-3.jpg">
+											<img src="img/gallery-3.jpg" alt="img">
+										</picture>
+									</a>
+								</div>
+								<div class="gallery-item">
+									<a href="img/gallery-4-x2.jpg" data-gallery="example-gallery">
+										<picture>
+											<source type="image/webp" srcset="img/gallery-4.webp">
+											<source type="image/jpeg" srcset="img/gallery-4.jpg">
+											<img src="img/gallery-4.jpg" alt="img">
+										</picture>
+									</a>
+								</div>
+								<div class="gallery-item">
+									<a href="img/gallery-5-x2.jpg" data-gallery="example-gallery">
+										<picture>
+											<source type="image/webp" srcset="img/gallery-5.webp">
+											<source type="image/jpeg" srcset="img/gallery-5.jpg">
+											<img src="img/gallery-5.jpg" alt="img">
+										</picture>
+									</a>
+								</div>
+								<div class="gallery-item">
+									<a href="img/gallery-6-x2.jpg" data-gallery="example-gallery">
+										<picture>
+											<source type="image/webp" srcset="img/gallery-6.webp">
+											<source type="image/jpeg" srcset="img/gallery-6.jpg">
+											<img src="img/gallery-6.jpg" alt="img">
+										</picture>
+									</a>
+								</div>
+								<div class="gallery-item mini-gallery">
+									<div class="inner-gallery">
+										<div class="mini-gallery__item">
+											<div class="inner-wrap">
+												<a href="img/gallery-7-x2.jpg" data-gallery="example-gallery">
+													<picture>
+														<source type="image/webp" srcset="img/gallery-7.webp">
+														<source type="image/jpeg" srcset="img/gallery-7.jpg">
+														<img src="img/gallery-7.jpg" alt="img">
+													</picture>
+												</a>
+											</div>
+										</div>
+										<div class="mini-gallery__item">
+											<div class="inner-wrap">
+												<a href="img/gallery-8-x2.jpg" data-gallery="example-gallery">
+													<picture>
+														<source type="image/webp" srcset="img/gallery-8.webp">
+														<source type="image/jpeg" srcset="img/gallery-8.jpg">
+														<img src="img/gallery-8.jpg" alt="img">
+													</picture>
+												</a>
+											</div>
+										</div>
+										<div class="mini-gallery__item">
+											<div class="inner-wrap">
+												<a href="img/gallery-9-x2.jpg" data-gallery="example-gallery">
+													<picture>
+														<source type="image/webp" srcset="img/gallery-9.webp">
+														<source type="image/jpeg" srcset="img/gallery-9.jpg">
+														<img src="img/gallery-9.jpg" alt="img">
+													</picture>
+												</a>
+											</div>
+										</div>
+										<div class="mini-gallery__item">
+											<div class="inner-wrap">
+												<a href="img/gallery-10-x2.jpg" data-gallery="example-gallery">
+													<picture>
+														<source type="image/webp" srcset="img/gallery-10.webp">
+														<source type="image/jpeg" srcset="img/gallery-10.jpg">
+														<img src="img/gallery-10.jpg" alt="img">
+													</picture>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="gallery-item">
+									<a href="img/gallery-11-x2.jpg" data-gallery="example-gallery">
+										<picture>
+											<source type="image/webp" srcset="img/gallery-11.webp">
+											<source type="image/jpeg" srcset="img/gallery-11.jpg">
+											<img src="img/gallery-11.jpg" alt="img">
+										</picture>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End gallery section -->
+			<!-- Begin latest news -->
+			<section class="mb-xs-50 mb-md-80 mb-lg-120">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="section-header on-scroll">
+								<p class="h-sub">What's new</p>
+								<h2>Latest News</h2>
+							</div>
+							<div class="news-slider" data-show-count='3' data-show-count-md='2' data-show-count-mob='1' data-slick-speed="5000" data-slick-autoplay="true">
+								<div class="news-slider__card">
+									<div class="news-block">
+										<a href="single-post.html" class="news-block__img">
+											<picture>
+												<source type="image/webp" srcset="img/news-2.webp">
+												<source type="image/jpeg" srcset="img/news-2.jpg">
+												<img src="img/news-2.jpg" alt="img">
+											</picture>
+										</a>
+										<div class="news-block-description">
+											<div class="news-block-description__main-info">
+												<p class="news-author">by <span class="main-color-font">Admin</span></p> <p>5 Comments</p>
+											</div>
+											<div class="news-block-description__short-text">
+												<h4><a href="single-post.html">The Preschool Money</a></h4>
+												<p>Let us know what you think of today’s newsletter and what you’d like to ...</p>
+												<time datetime="2019-11-13">13 November 2019</time>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="news-slider__card">
+									<div class="news-block">
+										<a href="single-post.html" class="news-block__img">
+											<picture>
+												<source type="image/webp" srcset="img/news-3.webp">
+												<source type="image/jpeg" srcset="img/news-3.jpg">
+												<img src="img/news-3.jpg" alt="img">
+											</picture>
+										</a>
+										<div class="news-block-description">
+											<div class="news-block-description__main-info">
+												<p>by <span class="main-color-font">Admin</span></p> <p>5 Comments</p>
+											</div>
+											<div class="news-block-description__short-text">
+												<h4><a href="single-post.html">Dual-Language Learners</a></h4>
+												<p>The number of dual language learners in early childhood classrooms is ...</p>
+												<time datetime="2019-11-10">10 November 2019</time>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="news-slider__card">
+									<div class="news-block">
+										<a href="single-post.html" class="news-block__img">
+											<picture>
+												<source type="image/webp" srcset="img/news-4.webp">
+												<source type="image/jpeg" srcset="img/news-4.jpg">
+												<img src="img/news-4.jpg" alt="img">
+											</picture>
+										</a>
+										<div class="news-block-description">
+											<div class="news-block-description__main-info">
+												<p>by <span class="main-color-font">Admin</span></p> <p>5 Comments</p>
+											</div>
+											<div class="news-block-description__short-text">
+												<h4><a href="single-post.html">Our Simple Machine Inquiry</a></h4>
+												<p>During our Force and Motion Inquiry, I noticed a lot of simple machines being ...</p>
+												<time datetime="2019-11-01">1 November 2019</time>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="news-slider__card">
+									<div class="news-block">
+										<a href="single-post.html" class="news-block__img">
+											<img src="img/educational-3.jpg" alt="img">
+										</a>
+										<div class="news-block-description">
+											<div class="news-block-description__main-info">
+												<p class="news-author">by <span class="main-color-font">Admin</span></p> <p>5 Comments</p>
+											</div>
+											<div class="news-block-description__short-text">
+												<h4><a href="single-post.html">The Preschool Money</a></h4>
+												<p>Let us know what you think of today’s newsletter and what you’d like to ...</p>
+												<time datetime="2019-11-13">13 November 2019</time>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End latest news -->
+		</main>
+
+		<footer>
+			<div class="footer-top lazy" data-src="img/footer-bg.svg">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 col-lg-4">
+							<div class="f-subscribe">
+								<a href="index.html" class="logo"><img src="img/company logo.PNG" alt="logo"></a>
+								<p>Our experienced team strives to offer a creative and engaging environment and the opportunity for children to learn, grow, and thrive.</p>
+								<form action="#" class="signup-form">
+									<input type="text" name="signup" class="signup" placeholder="Newsletter signup">
+									<button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M0.505883 5.20577L0.491834 5.2027L6.51423 5.2027L4.62101 7.10009C4.5283 7.19272 4.47745 7.31821 4.47745 7.44992C4.47745 7.58162 4.5283 7.70623 4.62101 7.79909L4.91559 8.09382C5.00823 8.18645 5.13166 8.23767 5.2633 8.23767C5.39501 8.23767 5.51852 8.18682 5.61115 8.09418L8.85649 4.84913C8.94949 4.75613 9.00035 4.63226 8.99998 4.50048C9.00035 4.36796 8.94949 4.24401 8.85649 4.15116L5.61115 0.905818C5.51852 0.813257 5.39508 0.76233 5.2633 0.76233C5.13166 0.76233 5.00823 0.813331 4.91559 0.905818L4.62101 1.20055C4.5283 1.29304 4.47745 1.41655 4.47745 1.54826C4.47745 1.67989 4.5283 1.79689 4.62101 1.88945L6.53559 3.79745L0.499152 3.79745C0.227908 3.79745 -1.94412e-05 4.03123 -1.94175e-05 4.30233L-1.93811e-05 4.71918C-1.93574e-05 4.99028 0.23464 5.20577 0.505883 5.20577Z"/></svg></button>
+								</form>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4">
+							<div class="f-nav">
+								<h4>Quick Links</h4>
+								<nav>
+								   
+								   <ul class="flex-style" >
+								  
+										<li>  <img src="E:\new project\childit\websmirno.site\icon\right-arrow (1).png" alt="arrow" style="padding-right: 5px;"> <a href="about-us.html">About us</a>
+										   </li>
+										   <li>  <img src="E:\new project\childit\websmirno.site\icon\right-arrow (1).png" alt="arrow" style="padding-right: 5px;"> <a href="MontessoriPhilosophy.html">Montessori</a>
+										   </li>
+										   <li>  <img src="E:\new project\childit\websmirno.site\icon\right-arrow (1).png" alt="arrow" style="padding-right: 5px;"> <a href="programs.html">Programs</a>
+										   </li>
+										   <li>  <img src="E:\new project\childit\websmirno.site\icon\right-arrow (1).png" alt="arrow" style="padding-right: 5px;"> <a href="ExtendedCare.html">Extended Care</a>
+										   </li>
+										   <li>  <img src="E:\new project\childit\websmirno.site\icon\right-arrow (1).png" alt="arrow" style="padding-right: 5px;"> <a href="Admissions.html">Admissions</a>
+										   </li>
+										   <li>  <img src="E:\new project\childit\websmirno.site\icon\right-arrow (1).png" alt="arrow" style="padding-right: 5px;"> <a href="FAQs.html">FAQs</a>
+										   </li>
+										   <li>  <img src="E:\new project\childit\websmirno.site\icon\right-arrow (1).png" alt="arrow" style="padding-right: 5px;"> <a href="Services.html">Services</a>
+										   </li>
+									   
+									</ul>
+								</nav>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4">
+							<div class="f-contact">
+								<h4>Our Contacts</h4>
+								<div class="contact-list">
+									<a href="#" target="_blank"> <img  src="E:\new project\childit\websmirno.site\icon\location.png" alt="location" style="padding-right: 10px;"> 3261 Anmoore Road Brooklyn, NY 11230</a>
+									<a href="tel:"> <img  src="E:\new project\childit\websmirno.site\icon\phone-call.png" alt="call" style="padding-right: 10px;"> 800-123-4567, Fax: 718-724-3312</a>
+									<a href="mailto:"><img  src="E:\new project\childit\websmirno.site\icon\arroba.png" alt="arroba" style="padding-right: 10px;">officeone@youremail.com</a>
+									<p><img  src="E:\new project\childit\websmirno.site\icon\calendar (1).png" alt="calendar" style="padding-right: 10px;">Mon-Fri: 9:00 am – 5:00 pm<br>Sat: 11:00 am – 16:00 pm</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom-wrap">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="footer-bottom">
+								<p>&copy; 2019 <a href="#">Union Village Montessori School.</a> All Rights Reserved. <a href="#">Privacy Policy</a></p>
+								<div class="soc-link-wrap">
+									<p>Follow us:</p>
+									<ul class="soc-link">
+										<li><a href="#">
+											<img src="E:\new project\childit\websmirno.site\icon\fb.PNG" class="lazy"  title='Facebook' alt="facebook">
+										</a></li>
+										<li><a href="#">
+											<img src="E:\new project\childit\websmirno.site\icon\insta.PNG" class="lazy"  title='Twitter' alt="twitter">
+										</a></li>
+										<li><a href="#">
+											<img src="E:\new project\childit\websmirno.site\icon\tiwter.PNG" class="lazy"  title='Instagram' alt="nstagram">
+										</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="up-btn">
+			<svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="../../www.w3.org/2000/svg.html">
+			<path d="M13 6.36563C13 6.77035 12.8528 7.17536 12.5568 7.4918C11.9438 8.1459 10.924 8.172 10.2791 7.55029L6.48873 3.89339L2.72462 7.54655C2.08197 8.17055 1.06219 8.14763 0.446938 7.49525C-0.168314 6.84259 -0.145429 5.80813 0.497507 5.18413L5.37122 0.453213C5.99268 -0.149866 6.9715 -0.151024 7.59494 0.449475L12.4992 5.1801C12.8316 5.50199 13 5.93281 13 6.36563Z"/>
+			</svg>
+		</div>
+		<!-- ===> Juery 3.2.1 JS <==== -->
+		<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="vendor/vendor-bundle.js"></script>
+		<script src="js/common.js"></script>
+		<script src="form/forms.js"></script>
+		<script src="../../maps.googleapis.com/maps/api/jsb2ae?key=AIzaSyDuHS2And3EtzpWBoMSqCIIiJzAEynp5ms&amp;callback=initMap" async defer></script>
+	</body>
+
+<!-- Mirrored from websmirno.site/childit/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Jun 2022 15:20:31 GMT -->
+</html>
